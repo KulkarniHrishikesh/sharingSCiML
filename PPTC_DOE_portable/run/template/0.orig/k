@@ -1,0 +1,40 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      k;
+}
+
+// k = 1.5*(TI*Uref)^2, TI ~= 1% (open towing-tank, low background
+// turbulence), Uref = 2.00525 m/s.
+
+dimensions      [0 2 -2 0 0 0 0];
+
+internalField   uniform 6.032e-4;
+
+boundaryField
+{
+    #includeEtc "caseDicts/setConstraintTypes"
+
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 6.032e-4;
+    }
+    outlet
+    {
+        type            inletOutlet;
+        inletValue      uniform 6.032e-4;
+        value           uniform 6.032e-4;
+    }
+    farfield
+    {
+        type            slip;
+    }
+    propeller
+    {
+        type            kqRWallFunction;
+        value           uniform 6.032e-4;
+    }
+}

@@ -1,0 +1,35 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      MRFProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Phase 1: steady frozen-rotor MRF (simpleFoam), matching this program's
+// default first-pass approach for rotor-only cases (NREL Phase VI,
+// axialTurbine). Target validation point: SVA report 3752 open-water
+// table, n = 10 s^-1, J = 0.8021 (KT = 0.5100, 10KQ = 1.1994, eta0 =
+// 0.543) -- omega = 2*pi*10 = 62.8319 rad/s.
+//
+// Sign/handedness NOT yet verified: VP1304 is right-handed per SVA report
+// 3752/3753 Table 1, but the exact sign convention against this case's own
+// +X axis (chosen to match the CAD's own orientation, see blockMeshDict)
+// was not independently re-derived. If the resulting thrust (forces
+// function object, x-component on the propeller patch) comes out negative
+// at this positive-J, positive-omega operating point, flip the sign below
+// -- flagged explicitly rather than guessed, same class of check as the
+// NREL Phase VI blade-orientation bug (PROBLEM.md sec 8).
+
+MRF1
+{
+    cellZone        rotor;
+    active          yes;
+
+    nonRotatingPatches ();
+
+    origin          (0 0 0);
+    axis            (1 0 0);
+    omega           62.8319;
+}

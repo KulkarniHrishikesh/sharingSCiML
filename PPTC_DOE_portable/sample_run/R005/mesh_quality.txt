@@ -1,0 +1,5 @@
+    cells:            1161568
+    Max aspect ratio = 24.19958 OK.
+    Mesh non-orthogonality Max: 64.942715 average: 11.054485
+ ***Max skewness = 6.7832686, 3 highly skew faces detected which may impair the quality of the results
+Failed 1 mesh checks.

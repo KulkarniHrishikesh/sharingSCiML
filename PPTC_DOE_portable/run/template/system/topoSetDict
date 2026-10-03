@@ -1,0 +1,36 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+// MRF cellZone: cylinder enclosing the whole rotating solid (propeller +
+// hub + drive shaft -- all rigidly connected in the real rig, all
+// genuinely rotating together at n = 10 rps). Radius 0.145 m clears the
+// 0.125 m blade tip with margin; axial extent -0.4 to 0.2 m covers the
+// full CAD solid (measured bbox x in [-0.356, 0.1337]) with margin on
+// both ends, comfortably inside the background domain (x in [-2.0, 1.0]).
+
+actions
+(
+    {
+        name    rotor;
+        type    cellSet;
+        action  new;
+        source  cylinderToCell;
+        point1  (0.2 0 0);
+        point2  (-0.4 0 0);
+        radius  0.145;
+    }
+    {
+        name    rotor;
+        type    cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        set     rotor;
+    }
+);
+
+// ************************************************************************* //

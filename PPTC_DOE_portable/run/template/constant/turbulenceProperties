@@ -1,0 +1,36 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      turbulenceProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+//
+// kOmegaSST RAS, consistent with the default turbulence model used
+// elsewhere in this program (ERCOFTAC pump, axialTurbine, NREL Phase VI).
+// The Gaggero & Villa (2018) OpenFOAM PPTC paper and the portfolio survey
+// both flag that standard RANS under-predicts lift breakdown at low
+// cavitation numbers unless interface turbulence damping is added -- see
+// README sec 4.4 for the specific fix (turbulence damping at the alpha
+// interface, e.g. via a modified nut wall/interface treatment) that Phase D
+// (post first-run validation) should investigate if the same gap appears
+// here.
+//
+simulationType RAS;
+
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+}
+
+// ************************************************************************* //

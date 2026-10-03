@@ -1,0 +1,193 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _b8cf4d35-20260127 OPENFOAM=2412 patch=260127 version=2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : reconstructParMesh -constant
+Date   : Oct 02 2026
+Time   : 22:29:29
+Host   : 51791403f0a1
+PID    : 11464
+I/O    : uncollated
+Case   : /workspace/pptc/runs/C_p0_J0.6
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Merge individual processor meshes back into one master mesh.
+Use if the original master mesh has been deleted or the processor meshes
+have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge assuming correct, fully matched procBoundaries.
+
+Found 16 processor directories
+    Reading database "C_p0_J0.6/processor0"
+    Reading database "C_p0_J0.6/processor1"
+    Reading database "C_p0_J0.6/processor2"
+    Reading database "C_p0_J0.6/processor3"
+    Reading database "C_p0_J0.6/processor4"
+    Reading database "C_p0_J0.6/processor5"
+    Reading database "C_p0_J0.6/processor6"
+    Reading database "C_p0_J0.6/processor7"
+    Reading database "C_p0_J0.6/processor8"
+    Reading database "C_p0_J0.6/processor9"
+    Reading database "C_p0_J0.6/processor10"
+    Reading database "C_p0_J0.6/processor11"
+    Reading database "C_p0_J0.6/processor12"
+    Reading database "C_p0_J0.6/processor13"
+    Reading database "C_p0_J0.6/processor14"
+    Reading database "C_p0_J0.6/processor15"
+
+Time = constant
+
+
+Writing merged mesh to "constant/polyMesh"
+
+Reconstructing addressing from processor meshes to the newly reconstructed mesh
+
+Processor 0
+Read processor mesh: "C_p0_J0.6/processor0"
+Writing addressing : "C_p0_J0.6/processor0/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 1
+Read processor mesh: "C_p0_J0.6/processor1"
+Writing addressing : "C_p0_J0.6/processor1/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 2
+Read processor mesh: "C_p0_J0.6/processor2"
+Writing addressing : "C_p0_J0.6/processor2/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 3
+Read processor mesh: "C_p0_J0.6/processor3"
+Writing addressing : "C_p0_J0.6/processor3/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 4
+Read processor mesh: "C_p0_J0.6/processor4"
+Writing addressing : "C_p0_J0.6/processor4/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 5
+Read processor mesh: "C_p0_J0.6/processor5"
+Writing addressing : "C_p0_J0.6/processor5/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 6
+Read processor mesh: "C_p0_J0.6/processor6"
+Writing addressing : "C_p0_J0.6/processor6/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 7
+Read processor mesh: "C_p0_J0.6/processor7"
+Writing addressing : "C_p0_J0.6/processor7/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 8
+Read processor mesh: "C_p0_J0.6/processor8"
+Writing addressing : "C_p0_J0.6/processor8/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 9
+Read processor mesh: "C_p0_J0.6/processor9"
+Writing addressing : "C_p0_J0.6/processor9/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 10
+Read processor mesh: "C_p0_J0.6/processor10"
+Writing addressing : "C_p0_J0.6/processor10/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 11
+Read processor mesh: "C_p0_J0.6/processor11"
+Writing addressing : "C_p0_J0.6/processor11/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 12
+Read processor mesh: "C_p0_J0.6/processor12"
+Writing addressing : "C_p0_J0.6/processor12/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 13
+Read processor mesh: "C_p0_J0.6/processor13"
+Writing addressing : "C_p0_J0.6/processor13/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 14
+Read processor mesh: "C_p0_J0.6/processor14"
+Writing addressing : "C_p0_J0.6/processor14/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 15
+Read processor mesh: "C_p0_J0.6/processor15"
+Writing addressing : "C_p0_J0.6/processor15/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Time = 356
+No meshes
+
+End
+

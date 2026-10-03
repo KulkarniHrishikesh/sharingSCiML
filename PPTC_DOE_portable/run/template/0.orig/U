@@ -1,0 +1,43 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Phase 1, open-water validation point: SVA report 3752, n=10 rps,
+// J = 0.8021 -> V = J*n*D = 0.8021*10*0.25 = 2.00525 m/s. Flow direction
+// is -X (SCS x-axis points upstream; propeller shaft is downstream and
+// trails to -x in the imported CAD -- see blockMeshDict).
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (-2.00525 0 0);
+
+boundaryField
+{
+    #includeEtc "caseDicts/setConstraintTypes"
+
+    inlet
+    {
+        type            fixedValue;
+        value           uniform (-2.00525 0 0);
+    }
+    outlet
+    {
+        type            inletOutlet;
+        inletValue      uniform (0 0 0);
+        value           uniform (-2.00525 0 0);
+    }
+    farfield
+    {
+        type            slip;
+    }
+    propeller
+    {
+        type            movingWallVelocity;
+        value           uniform (0 0 0);
+    }
+}

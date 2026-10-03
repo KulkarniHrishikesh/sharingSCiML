@@ -1,0 +1,3379 @@
+      Potsdam Propeller Test Case (PPTC)
+
+            LDV Velocity Measurements
+          with the Model Propeller VP1304
+
+
+
+                               Report 3754
+
+
+
+
+                          Potsdam, April 2011
+
+
+
+
+Schiffbau-Versuchsanstalt Potsdam GmbH, Marquardter Chaussee 100, 14469 Potsdam
+         Tel. +49 331 56712-0, Fax +49 331 56712-49, www.sva-potsdam.de
+                                                                  Report   3754
+                                                                  Page       1.1
+
+
+
+                        Potsdam Propeller Test Case (PPTC)
+
+                           LDV Velocity Measurements
+                         with the Model Propeller VP1304
+
+
+Client                        Schiffbau-Versuchsanstalt Potsdam GmbH
+                              Marquardter Chaussee 100
+                              14469 Potsdam
+                              Tel. +49 331 56712-0
+                              Fax +49 331 56712-49
+
+
+
+
+Contractor                    Schiffbau-Versuchsanstalt Potsdam GmbH
+                              Marquardter Chaussee 100
+                              14469 Potsdam
+                              Tel. +49 331 56712-0
+                              Fax +49 331 56712-49
+
+
+
+
+Author                        Dipl.-Ing. K.-P. Mach
+
+
+
+This report includes           8   pages text
+                               2   pages tables
+                              44   pages diagrams/drawings
+                               1   page photographs
+                              13   pages annex
+
+Potsdam, 15/04/2011
+
+
+
+
+                 Management                                  Author
+                                                                                                                    Report              3754
+                                                                                                                    Page                  1.2
+
+
+
+Content
+
+Text                                                                                                                                      Page
+1         Summary ...................................................................................................................... 1.4
+2         Introduction.................................................................................................................. 1.4
+3         Task.............................................................................................................................. 1.4
+4         Description of the model propeller VP1304 ................................................................ 1.5
+5         Test arrangement ......................................................................................................... 1.5
+6         Test procedure ............................................................................................................. 1.6
+7         Test results ................................................................................................................... 1.8
+8         References .................................................................................................................... 1.8
+
+Tables
+Details of model tests .............................................................................................................. 2.1
+Extend of LDV measurements with the VP1304 .................................................................... 2.2
+
+Diagrams and drawings
+Model propeller VP1304 ......................................................................................................... 3.1
+Test arrangement in the cavitation tunnel................................................................................ 3.3
+Propeller VP1304 in the cavitation tunnel ............................................................................... 3.4
+Measuring planes ..................................................................................................................... 3.5
+Axial velocity components, x/D = -0.2 .................................................................................... 3.6
+Axial velocity components, x/D = 0.094 ................................................................................. 3.7
+3D velocity components, x/D = 0.094 ..................................................................................... 3.8
+Detailed 3D velocity field, x/D = 0.094 .................................................................................. 3.9
+Axial velocity components, x/D = 0.10 ................................................................................. 3.10
+3D velocity components, x/D = 0.10 ..................................................................................... 3.11
+Detailed 3D velocity field, x/D = 0.10 .................................................................................. 3.12
+Axial velocity components, x/D = 0.11 ................................................................................. 3.13
+3D velocity components, x/D = 0.11 ..................................................................................... 3.14
+Detailed 3D velocity field, x/D = 0.11 .................................................................................. 3.15
+Axial velocity components, x/D = 0.13 ................................................................................. 3.16
+3D velocity components, x/D = 0.13 ..................................................................................... 3.17
+Detailed 3D velocity field, x/D = 0.13 .................................................................................. 3.18
+Axial velocity components, x/D = 0.16 ................................................................................. 3.19
+3D velocity components, x/D = 0.16 ..................................................................................... 3.20
+Detailed 3D velocity field, x/D = 0.16 .................................................................................. 3.21
+Axial velocity components, x/D = 0.20 ................................................................................. 3.22
+3D velocity components, x/D = 0.20 ..................................................................................... 3.23
+Detailed 3D velocity field, x/D = 0.20 .................................................................................. 3.24
+Turbulence degree of the axial velocity field, x/D = 0.094 - 0.20 ......................................... 3.25
+Turbulence degree of the tangential velocity field, x/D = 0.094 - 0.20 ................................. 3.26
+Turbulence degree of the radial velocity field, x/D = 0.094 - 0.20 ....................................... 3.27
+Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.10 ....................................................... 3.28
+Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.13 ....................................................... 3.34
+Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.20 ....................................................... 3.40
+                                                                                                                  Report             3754
+                                                                                                                  Page                 1.3
+
+
+
+
+Photographs
+Test arrangement in the cavitation tunnel................................................................................ 4.1
+Appendix
+Symbols ................................................................................................................................ A1.1
+Methods and formulas .......................................................................................................... A2.1
+Co-ordinate system ............................................................................................................... A3.1
+                                                                               Report     3754
+                                                                               Page         1.4
+
+
+
+
+1       Summary
+
+For the SMP’11 workshop the SVA provided the controllable pitch propeller VP1304 as a test
+case. Several investigations were conducted with this propeller: open water tests [2],
+cavitation tests [3] and LDV measurements.
+
+For the validation of CFD calculations of the flow around propellers, intensive LDV
+measurements were carried out in the cavitation tunnel of the SVA. A description of the LDV
+measuring system at SVA can be found in [1].
+
+
+The velocity field of the propeller VP1304 was measured in detail, especially the flow around
+the blade tip. All measured values were made dimensionless using the inflow velocity.
+
+The measured results show the following characteristic flow regions:
+       wake of the propeller blades,
+       accelerated flow on the propeller blades mainly on the suction side,
+       decelerated flow near the hub at the pressure side of the blade,
+       highly accelerated flow within the tip vortex,
+       highly decelerated flow within the tip vortex.
+
+
+
+2       Introduction
+
+The velocity field around the propeller VP1304 was measured with a LDV measuring system
+in the cavitation tunnel K15A. The results of these measurements are presented in this report.
+
+The open water characteristics and cavitation behaviour of the propeller VP1304 are
+documented in the SVA reports 3752 [2] and 3573 [3].
+
+
+3       Task
+
+The model propeller VP1304 was tested in the cavitation tunnel of the Potsdam Model Basin
+in homogeneous flow.
+
+Main focus of the tests was the measurement of the velocity field behind the propeller and the
+acquisition of the tip vortex as a function of the propeller rotation angle. The velocity field
+around the model propeller VP1304 was measured in seven planes x/D = -0.2, 0.094, 0.10,
+0.11, 0.13, 0.16 and 0.20, with respect to the propeller plane. All measurements were
+conducted for the same working point.
+                                                                              Report       3754
+                                                                              Page           1.5
+
+
+
+
+4      Description of the model propeller VP1304
+
+The propeller was designed by the SVA in 1998. For the manufacture of the propeller cold-
+rolled brass was used as raw material. The blades were manufactured on a CNC-based milling
+machine with HSC (high speed cutting) technology.
+
+The propeller main properties are shown in table 1 and in the drawing on page 3.1. Photos of
+the propeller are shown on page 4.1.
+
+The propeller is a controllable pitch propeller. This affects the propeller blade design near the
+hub and results in a 0.3 mm gap between hub and propeller blade near the leading and trailing
+edge of the propeller.
+
+Table 1: Main data of model propeller
+
+                                                                    VP1304
+     Diameter                            D       [m]                0.250
+     Design pitch ratio r/R = 0.7        P0.7C/D [–]                1.635
+     Area ratio                          AE/A0 [m]                  0.77896
+     Chord length r/R = 0.7              c0.7    [m]                0.10417
+     Skew                                θEXT     [°]             18.837
+     Hub ratio                           dh/D    [–]                0.300
+     Number of blades                    Z       [–]                5
+     Sense of rotation                           [–]                right
+     Type                                                   controllable pitch propeller
+
+
+5      Test arrangement
+
+The tests were carried out in the test small section of the cavitation tunnel K15A from Kempf
+& Remmers. The dynamometer J25 from Kempf & Remmers was used for the tests. The
+dynamometer was arranged in front of the propeller model (drawings on page 3.2, photos on
+page 4.1). The shaft inclination was zero degrees.
+
+A 2D-LDV measuring system from TSI was used for the velocity measurements. A four beam
+standard compact probe was used as optical unit. The simultaneous measurement of two
+velocity components is possible with this probe in back scattering mode.
+
+The LDV measurements had been carried out from the side and from the bottom. The third
+velocity component could measured time shifted with these two arrangements.
+                                                                              Report        3754
+                                                                              Page            1.6
+
+
+
+6       Test procedure
+
+The LDV measurements with the propeller VP1304 had been carried out in the small test
+section of the cavitation tunnel K15A from Kempf & Remmers.
+
+The 2D-LDV probe was arranged orthogonal to the test section from the side and from the
+bottom. The measurement of the velocity components Vx and Vz is possible with the
+arrangement of the probe from the side. The measurement of the velocity components Vx and
+Vy is possible with the arrangement of the probe from the bottom.
+
+The exact adjustment of the probe in the space and the accurate positioning of the measuring
+volume are the preconditions for the configuration of both 2D-velocity fields to a 3D-velocity
+field.
+The velocity-time-characteristic in the surrounding area of a propeller can be divided in three
+velocity components, the stationary velocity Vsta, the periodical velocity Vper caused by the
+propeller rotation and the stochastic velocity Vsto.
+                V(t) = Vsta + Vper + Vsto
+
+The propeller rotation angle in the moment of measuring a velocity will be stored together
+with the velocity and time information, to collect the quasi periodical velocity part.
+
+The stochastic velocity part consists mainly of the following components:
+
+    -   turbulence of the flow in the measuring point,
+    -   fluctuations of the periodical velocity due to stochastic flow separation,
+        vibration of the propeller and shaft, fluctuations in the inflow speed and number
+        of revolutions,
+    -   random noise and disturbance signals during the LDV measurements.
+
+Main focus of the tests was the measurement of the velocity field behind the propeller and the
+acquisition of the tip vortex as a function of the propeller rotation angle. The tip vortex is a
+relatively small region with high velocity gradients. That’s why high demands on the local
+and temporal resolution had to be fulfilled, which as follows:
+
+    -   a small measuring volume,
+    -   a minimum distance between the measuring points,
+    -   a high resolution of the propeller rotation angle in the moment of a velocity
+        signal.
+
+The probe was equipped with a transmitting lens of f = 261 mm in air (f = 347 mm in water)
+to get a small measuring volume. With this arrangement the measuring volume in the
+intersection point of the laser beams has a maximum size of 65 m in diameter and 0.9 mm in
+length. The ratio between the length of the measuring volume and the propeller diameter is
+L/D = 0.0036.
+                                                                                        Report         3754
+                                                                                        Page             1.7
+
+
+
+The minimal distance between the measuring points along the r/R-axis was r/R = 0.002. With
+the measuring volume length of L/D = 0.0036 the measuring ranges were partly overlapping.
+
+The resolution of the propeller rotation angle was defined within steps of 0.25°. The measured
+velocities were selected in 1440 angle classes. The measuring times was fixed with 90
+seconds or 40000 measuring values for each velocity component. With the measuring time of
+90 seconds and the number of revolutions of n = 23 s-1 the measurements delivered data up to
+2070 propeller rotations.
+
+All measurements had been carried out in the coincedence mode. This means that the velocity
+information of one velocity component is only valid if also information about the second
+velocity component were available in a defined time window.
+
+A description of the LDV measuring system at SVA can be found in [1]. Table 2 presents the
+working parameters of the propeller for the velocity measurements.
+
+Table 2: Working point for the LDV measurements
+          Inflow speed                           VA           [m/s]            7.204
+          Number of revolutions                  n            [s-1]           23
+          Advance coefficient                    J            [–]              1.253
+          Thrust coefficient                     KT           [–]              0.250
+          Torque coefficient                     10KQ         [–]              0.725
+
+The LDV measurements had been carried out along a line at the rotation angle 225 degrees.
+Table 3 presents the measuring planes in front and behind the propeller (see also the drawing
+on page 3.4).
+
+Table 3: Measuring planes
+    x-position x/D     [–]     -0.200    0.094     0.100        0.110        0.130   0.160     0.200
+    x-position x       [mm]     -50.0    23.5          25.0     27.5         32.5      40.0    50.0
+
+Table 4 shows the positions of the measuring points on the radius at the different measuring
+planes. On page 2.2 an overview of all tests and test parameters is given
+
+Table 4: Positions of the measuring points
+           measuring plane                start radius           end radius               step size
+                                                 r/R                  r/R              r/R       [mm]
+ in front of the propeller x/D = -0.20          0.40                  1.10             0.050      6.250
+                                                0.40                  0.70             0.050      6.250
+                                                0.70                  0.90             0.025      3.125
+         behind the propeller                   0.90                  0.95             0.010      1.250
+  x/D = 0.094, 0.10, 0.11, 0.13, 0.16,
+                 0.20                           0.95                  1.05             0.002      0.250
+                                                1.05                  1.10             0.025      3.125
+                                                                                Report   3754
+                                                                                Page       1.8
+
+
+
+7      Test results
+
+The test results are given as EXCEL-files for the different measuring planes.
+
+Selected test results are shown in the diagrams on the pages 3.5 to 3.44.
+
+
+
+8      References
+
+[1]    Mach, K.–P.
+       LDA Geschwindigkeitsmessungen am Kavitationstunnel
+       3. Fachtagung Lasermethoden in der Strömungsmeßtechnik, Bremen, Sept. 1994
+
+[2]    Barkmann, U.
+       Potsdam Propeller Test Case (PPTC) - Open Water Tests with the Model Propeller
+       VP1304
+       Report 3752, Schiffbau-Versuchsanstalt Potsdam, April 2011
+
+[3]    Heinke, H.–J.
+       Potsdam Propeller Test Case (PPTC) - Cavitation Tests with the Model Propeller VP1304
+       Report 3753, Schiffbau-Versuchsanstalt Potsdam, April 2011
+                                                                                Report       3754
+                                                                                Page           2.1
+
+
+
+
+                                                                                                     TABLES
+                                       Details of model tests
+
+VP1304
+Cavitation tunnel                              K15A (Kempf & Remmers)
+Dimensions of the small test section           0.600 m · 0.600 m with rounded edges
+
+Propeller                                      VP1304
+Material of the propeller                      brass
+Type of propeller                              controllable pitch propeller
+Diameter of propeller                          0.250 m
+
+Measuring equipment in cavitation tunnel for:
+Number of revolutions, thrust and torque      dynamometer J25 with:
+                                              Tmax = 3000 N
+                                              Qmax = 150 Nm
+
+Inflow velocity                                manometer (principle of venture nozzle)
+Maximum inflow velocity                        Vmax = 14 m/s
+
+                                               TSI standard 2D fiber optic probe,
+                                               beam spacing s = 50mm, focal length of the
+Velocity measurements                          transmitting lens f = 261mm in air,
+                                               4W Argon laser, signal processor IFA 650,
+                                               3D computer controlled traversing unit
+                                                                     Report   3754
+                                                                     Page       2.2
+
+
+
+
+                                                                                      TABLES
+             Overview of LDV measurements with the VP1304
+
+LDV measurements
+
+    Plane        Probe from the bottom           Probe from the side
+                   Date           Test No.      Date            Test No.
+    -0.20D      26/09/1998       98KM192      01/10/1998       98KM200
+    0.094D      30/09/1998       98KM199      02/10/1998       98KM206
+    0.10D       26/09/1998       98KM193      01/10/1998       98KM201
+    0.11D       30/09/1998       98KM196      01/10/1998       98KM202
+    0.13D       30/09/1998       98KM195      01/10/1998       98KM203
+    0.16D       30/09/1998       98KM197      01/10/1998       98KM204
+    0.20D       30/09/1998       98KM198      02/10/1998       98KM205
+
+
+Results
+
+                           Table
+    Plane                                              Diagram
+                          Data sets
+                                                           3.5
+    -0.20D      Velocities – r_R=-0.20D.xls
+                                                       3.24 – 3.26
+                                                        3.6 – 3.8
+    0.094D      Velocities – r_R=0.094D.xls
+                                                       3.24 – 3.26
+                                                        3.9 – 3.11
+    0.10D       Velocities – r_R=0.10D.xls             3.24 – 3.26
+                                                       3.27 – 3.32
+                                                       3.12 – 3.14
+    0.11D       Velocities – r_R=0.11D.xls
+                                                       3.24 – 3.26
+                                                       3.15 – 3.17
+    0.13D       Velocities – r_R=0.13D.xls             3.24 – 3.26
+                                                       3.33 – 3.38
+                                                       3.18 – 3.20
+    0.16D       Velocities – r_R=0.16D.xls
+                                                       3.24 – 3.26
+                                                       3.21 – 3.23
+    0.20D       Velocities – r_R=0.20D.xls             3.24 – 3.26
+                                                       3.39 – 3.44
+                         Report   3754
+                         Page       3.1
+
+
+Model propeller VP1304
+
+
+
+
+                                          DIAGRAMS/DRAWINGS
+                                            Report   3754
+                                            Page       3.2
+
+
+           Propeller VP1304
+
+
+
+
+                                                             DIAGRAMS/DRAWINGS
+VP1304 in cavitation tunnel configuration
+                                                                            Report      3754
+                                                                            Page          3.3
+
+
+                        Test arrangement in the cavitation tunnel
+
+
+
+
+                                                                                                DIAGRAMS/DRAWINGS
+      VA
+
+
+
+
+Model propeller VP1304 in the small test section with dynamometer J25 (shaft diameter 50 mm)
+
+
+
+
+      Cavitation tunnel type Kempf & Remmers K15A, small test section 600 x 600 mm
+                                            Report   3754
+                                            Page       3.4
+
+
+Propeller VP1304 in the cavitation tunnel
+
+
+
+
+                                                             DIAGRAMS/DRAWINGS
+                   Report   3754
+                   Page       3.5
+
+
+
+Measuring planes
+
+
+
+
+                                    DIAGRAMS/DRAWINGS
+                                        Report   3754
+                                        Page       3.6
+
+
+Axial velocity components, x/D = -0.2
+
+
+
+
+                                                         DIAGRAMS/DRAWINGS
+                                         Report   3754
+                                         Page       3.7
+
+
+Axial velocity components, x/D = 0.094
+
+
+
+
+                                                          DIAGRAMS/DRAWINGS
+                                      Report   3754
+                                      Page       3.8
+
+
+3D velocity components, x/D = 0.094
+
+
+
+
+                                                       DIAGRAMS/DRAWINGS
+                                          Report   3754
+                                          Page       3.9
+
+
+Detailed 3D velocity field, x/D = 0.094
+
+
+
+
+                                                           DIAGRAMS/DRAWINGS
+                                        Report   3754
+                                        Page      3.10
+
+
+Axial velocity components, x/D = 0.10
+
+
+
+
+                                                         DIAGRAMS/DRAWINGS
+                                     Report   3754
+                                     Page      3.11
+
+
+3D velocity components, x/D = 0.10
+
+
+
+
+                                                      DIAGRAMS/DRAWINGS
+                                         Report   3754
+                                         Page      3.12
+
+
+Detailed 3D velocity field, x/D = 0.10
+
+
+
+
+                                                          DIAGRAMS/DRAWINGS
+                                        Report   3754
+                                        Page      3.13
+
+
+Axial velocity components, x/D = 0.11
+
+
+
+
+                                                         DIAGRAMS/DRAWINGS
+                                     Report   3754
+                                     Page      3.14
+
+
+3D velocity components, x/D = 0.11
+
+
+
+
+                                                      DIAGRAMS/DRAWINGS
+                                         Report   3754
+                                         Page      3.15
+
+
+Detailed 3D velocity field, x/D = 0.11
+
+
+
+
+                                                          DIAGRAMS/DRAWINGS
+                                        Report   3754
+                                        Page      3.16
+
+
+Axial velocity components, x/D = 0.13
+
+
+
+
+                                                         DIAGRAMS/DRAWINGS
+                                     Report   3754
+                                     Page      3.17
+
+
+3D velocity components, x/D = 0.13
+
+
+
+
+                                                      DIAGRAMS/DRAWINGS
+                                         Report   3754
+                                         Page      3.18
+
+
+Detailed 3D velocity field, x/D = 0.13
+
+
+
+
+                                                          DIAGRAMS/DRAWINGS
+                                        Report   3754
+                                        Page      3.19
+
+
+Axial velocity components, x/D = 0.16
+
+
+
+
+                                                         DIAGRAMS/DRAWINGS
+                                     Report   3754
+                                     Page      3.20
+
+
+3D velocity components, x/D = 0.16
+
+
+
+
+                                                      DIAGRAMS/DRAWINGS
+                                         Report   3754
+                                         Page      3.21
+
+
+Detailed 3D velocity field, x/D = 0.16
+
+
+
+
+                                                          DIAGRAMS/DRAWINGS
+                                        Report   3754
+                                        Page      3.22
+
+
+Axial velocity components, x/D = 0.20
+
+
+
+
+                                                         DIAGRAMS/DRAWINGS
+                                     Report   3754
+                                     Page      3.23
+
+
+3D velocity components, x/D = 0.20
+
+
+
+
+                                                      DIAGRAMS/DRAWINGS
+                                         Report   3754
+                                         Page      3.24
+
+
+Detailed 3D velocity field, x/D = 0.20
+
+
+
+
+                                                          DIAGRAMS/DRAWINGS
+                                                                Report   3754
+                                                                Page      3.25
+
+
+Turbulence degree of the axial velocity field, x/D = 0.094 - 0.20
+
+
+
+
+                                                                                 DIAGRAMS/DRAWINGS
+x/D = 0.094                                       x/D = 0.10
+
+
+
+
+ x/D = 0.11                                       x/D = 0.13
+
+
+
+
+ x/D = 0.16                                       x/D = 0.20
+                                                                  Report   3754
+                                                                  Page      3.26
+
+
+Turbulence degree of the tangential velocity field, x/D = 0.094 - 0.20
+
+
+
+
+                                                                                   DIAGRAMS/DRAWINGS
+   x/D = 0.094                                      x/D = 0.10
+
+
+
+
+    x/D = 0.11                                      x/D = 0.13
+
+
+
+
+    x/D = 0.16                                      x/D = 0.20
+                                                                Report   3754
+                                                                Page      3.27
+
+
+Turbulence degree of the radial velocity field, x/D = 0.094 - 0.20
+
+
+
+
+                                                                                 DIAGRAMS/DRAWINGS
+ x/D = 0.094                                      x/D = 0.10
+
+
+
+
+  x/D = 0.11                                      x/D = 0.13
+
+
+
+
+  x/D = 0.16                                      x/D = 0.20
+                                                                                                                                            Report    3754
+                                                                                                                                            Page       3.28
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.10
+
+                           1.0
+                                       x /D = 0.10, r /R = 0.40
+                           0.8
+                                                                                               _____                 _____         _____
+                                                                                                       V x /V A-1            wt            wr
+                           0.6
+
+
+
+
+                                                                                                                                                              DIAGRAMS/DRAWINGS
+                           0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                           0.2
+
+
+                           0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180      210   240            270         300           330           360
+                                                                           
+
+
+
+                           1.0
+                                       x /D = 0.10, r /R = 0.50
+                           0.8
+                                                                                           _____                    _____          _____
+                                                                                                       V x /V A-1            wt            wr
+                           0.6
+
+
+                           0.4
+V x/V A-1, w t, w r [-]
+
+
+
+
+                           0.2
+
+
+                           0.0
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180      210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.10, r /R = 0.60
+                          0.8
+                                                                                           _____                    _____         _____
+                                                                                                       V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30     60      90    120    150   180      210   240            270         300           330           360
+                                                                           [°]
+                                                                                                                                           Report    3754
+                                                                                                                                           Page       3.29
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.10
+
+                          1.0
+                                       x /D = 0.10, r /R = 0.70
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                             DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.10, r /R = 0.80
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /VA -1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.10, r /R = 0.85
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /VA -1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240           270          300           330           360
+                                                                           [°]
+                                                                                                                                                   Report    3754
+                                                                                                                                                   Page       3.30
+
+
+                                          Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.10
+
+                           1.0
+                                                                                                      _____                _____         _____
+                                           x /D = 0.10, r /R = 0.90                                           V x /V A-1            wt            wr
+                           0.8
+
+
+                           0.6
+
+
+
+
+                                                                                                                                                                     DIAGRAMS/DRAWINGS
+                           0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                           0.2
+
+
+                           0.0
+
+
+                           -0.2
+
+
+                           -0.4
+
+
+                           -0.6
+
+
+                           -0.8
+                                  0         30      60     90     120       150   180     210   240            270         300           330           360
+                                                                                   [°]
+
+
+
+                            1.0
+                                                                                                      _____                 _____         _____
+                                            x /D = 0.10, r /R = 0.92                                          V x /V A-1            wt            wr
+                            0.8
+
+
+                            0.6
+
+
+                            0.4
+ Vx /VA -1, w t, w r [-]
+
+
+
+
+                            0.2
+
+
+                            0.0
+
+                           -0.2
+
+
+                           -0.4
+
+
+                           -0.6
+
+
+                           -0.8
+                                      0      30      60     90        120   150   180     210   240            270         300           330           360
+                                                                                   [°]
+
+
+
+                            1.0
+                                            x /D = 0.10, r /R = 0.94
+                            0.8
+                                                                                                      _____                _____          _____
+                                                                                                              V x /V A-1            wt            wr
+                            0.6
+
+
+                            0.4
+ Vx /V A-1, w t, w r [-]
+
+
+
+
+                            0.2
+
+
+                            0.0
+
+
+                           -0.2
+
+
+                           -0.4
+
+
+                           -0.6
+
+
+                           -0.8
+                                      0      30      60     90        120   150   180     210   240            270         300           330           360
+                                                                                   [°]
+                                                                                                                                               Report   3754
+                                                                                                                                               Page      3.31
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.10
+
+                          1.0
+                                       x /D = 0.10, r /R = 0.96
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                                DIAGRAMS/DRAWINGS
+                          0.4
+V x/V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.10, r /R = 0.97
+                          0.8
+                                                                                          _____                    _____          _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                                                                          _____                    _____         _____
+                                       x /D = 0.10, r /R = 0.98                                   V x /V A-1               wt             wr
+                          0.8
+
+
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+                                                                                                                                           Report    3754
+                                                                                                                                           Page       3.32
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.10
+
+                          1.0
+                                                                                          _____                    _____          _____
+                                       x /D = 0.10, r /R = 0.99                                       V x /V A-1            wt            wr
+                          0.8
+
+
+                          0.6
+
+
+
+
+                                                                                                                                                             DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.10, r /R = 1.00
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /VA -1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.10, r /R = 1.01
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+                                                                                                                                            Report    3754
+                                                                                                                                            Page       3.33
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.10
+
+                          1.0
+                                       x /D = 0.10, r /R = 1.02
+                          0.8
+                                                                                               _____                 _____         _____
+                                                                                                       V x /V A-1            wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                              DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180      210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.10, r /R = 1.03
+                          0.8
+                                                                                               _____                 _____         _____
+                                                                                                       V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180      210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.10, r /R = 1.05
+                          0.8
+                                                                                               _____                 _____         _____
+                                                                                                       V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180      210   240           270          300           330           360
+                                                                           [°]
+                                                                                                                                           Report    3754
+                                                                                                                                           Page       3.34
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.13
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.40
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                             DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.50
+                          0.8
+                                                                                          _____                    _____          _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.60
+                          0.8
+                                                                                          _____                     _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+                                                                                                                                           Report    3754
+                                                                                                                                           Page       3.35
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.13
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.70
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                             DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.80
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.85
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+                                                                                                                                      Report    3754
+                                                                                                                                      Page       3.36
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.13
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.90
+                          0.8
+                                                                                          _____                _____        _____
+                                                                                                  V x /V A-1           wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                        DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240        270         300          330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.92
+                          0.8
+                                                                                          _____                _____         _____
+                                                                                                  V x /V A-1           wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240        270         300          330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.94
+                          0.8
+                                                                                          _____                _____         _____
+                                                                                                  V x /V A-1           wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240        270         300          330           360
+                                                                           [°]
+                                                                                                                                      Report    3754
+                                                                                                                                      Page       3.37
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.13
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.96
+                          0.8
+                                                                                          _____                _____         _____
+                                                                                                  V x /V A-1           wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                        DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240        270         300          330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.97
+                          0.8
+                                                                                          _____                _____         _____
+                                                                                                  V x /V A-1           wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240        270         300          330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.13, r /R = 0.98
+                          0.8
+                                                                                          _____                _____         _____
+                                                                                                  V x /V A-1           wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240        270         300          330           360
+                                                                           [°]
+                                                                                                                                              Report    3754
+                                                                                                                                              Page       3.38
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.13
+
+                           1.0
+                                       x /D = 0.13, r /R = 0.99
+                           0.8
+                                                                                                 _____                 _____         _____
+                                                                                                         V x /V A-1            wt            wr
+                           0.6
+
+
+
+
+                                                                                                                                                                DIAGRAMS/DRAWINGS
+                           0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                           0.2
+
+
+                           0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90        120   150   180     210   240            270         300           330           360
+                                                                              [°]
+
+
+
+                          1.0
+                                      x /D = 0.13, r /R = 1.00
+                          0.8
+                                                                                             _____                    _____         _____
+                                                                                                         V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30     60      90     120      150   180     210   240            270         300           330           360
+                                                                              [°]
+
+
+
+                           1.0
+                                      x /D = 0.13, r /R = 1.01
+                           0.8
+                                                                                             _____                    _____         _____
+                                                                                                     V x /V A-1               wt            wr
+                           0.6
+
+
+                           0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                           0.2
+
+
+                           0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90        120   150   180     210   240            270         300           330           360
+                                                                              [°]
+                                                                                                                                      Report    3754
+                                                                                                                                      Page       3.39
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.13
+
+                          1.0
+                                      x /D = 0.13, r /R = 1.022
+                          0.8
+                                                                                          _____                _____         _____
+                                                                                                  V x /V A-1           wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                        DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240        270         300          330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                      x /D = 0.13, r /R = 1.032
+                          0.8
+                                                                                          _____                _____         _____
+                                                                                                  V x /V A-1           wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240        270         300          330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                      x /D = 0.13, r /R = 1.042
+                          0.8
+                                                                                          _____                _____         _____
+                                                                                                  V x /V A-1           wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240        270         300          330           360
+                                                                           [°]
+                                                                                                                                           Report    3754
+                                                                                                                                           Page       3.40
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.20
+
+                          1.0
+                                       x /D = 0.20, r /R = 0.40
+                          0.8
+                                                                                          _____                    _____          _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                             DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.20, r /R = 0.50
+                          0.8
+                                                                                          _____                    _____          _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.20, r /R = 0.60
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+                                                                                                                                            Report    3754
+                                                                                                                                            Page       3.41
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.20
+
+                           1.0
+                                       x /D = 0.20, r /R = 0.70
+                           0.8
+                                                                                               _____                 _____         _____
+                                                                                                       V x /V A-1            wt            wr
+                           0.6
+
+
+
+
+                                                                                                                                                              DIAGRAMS/DRAWINGS
+                           0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                           0.2
+
+
+                           0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180      210   240           270          300           330           360
+                                                                           [°]
+
+
+
+                           1.0
+                                       x /D = 0.20, r /R = 0.80
+                           0.8
+                                                                                               _____                 _____         _____
+                                                                                                       V x /V A-1            wt            wr
+                           0.6
+
+
+                           0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                           0.2
+
+
+                           0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0       30     60     90     120   150   180      210   240           270          300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.20, r /R = 0.85
+                          0.8
+                                                                                           _____                    _____         _____
+                                                                                                   V x /V A-1               wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180      210   240           270          300           330           360
+                                                                           [°]
+                                                                                                                                               Report   3754
+                                                                                                                                               Page      3.42
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.20
+
+                          1.0
+                                       x /D = 0.20, r /R = 0.90
+                          0.8
+                                                                                          _____                    _____          _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                                DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.20, r /R = 0.92
+                          0.8
+                                                                                              _____                 _____         _____
+                                                                                                      V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+
+
+
+                          1.0
+                                       x /D = 0.20, r /R = 0.94
+                          0.8
+                                                                                          _____                    _____         _____
+                                                                                                  V x /V A-1               wt             wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                           [°]
+                                                                                                                                                   Report    3754
+                                                                                                                                                   Page       3.43
+
+
+                                             Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.20
+
+                                  1.0
+                                               x /D = 0.20, r /R = 0.96
+                                  0.8
+                                                                                                  _____                    _____          _____
+                                                                                                              V x /V A-1            wt            wr
+                                  0.6
+
+
+
+
+                                                                                                                                                                     DIAGRAMS/DRAWINGS
+                                  0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                                  0.2
+
+
+                                  0.0
+
+
+                                  -0.2
+
+
+                                  -0.4
+
+
+                                  -0.6
+
+
+                                  -0.8
+                                         0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                                   [°]
+
+
+
+                                  1.0
+                                               x /D = 0.20, r /R = 0.97
+                                  0.8
+                                                                                                      _____                 _____         _____
+                                                                                                              V x /V A-1            wt            wr
+                                  0.6
+
+
+                                  0.4
+        Vx /V A-1, w t, w r [-]
+
+
+
+
+                                  0.2
+
+
+                                  0.0
+
+
+                                  -0.2
+
+
+                                  -0.4
+
+
+                                  -0.6
+
+
+                                  -0.8
+                                         0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                                   [°]
+
+
+
+                                  1.0
+                                               x /D = 0.20, r /R = 0.98
+                                  0.8
+                                                                                                  _____                     _____         _____
+                                                                                                              V x /V A-1            wt            wr
+                                  0.6
+
+
+                                  0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                                  0.2
+
+
+                                  0.0
+
+
+                                  -0.2
+
+
+                                  -0.4
+
+
+                                  -0.6
+
+
+                                  -0.8
+                                         0      30      60     90     120   150   180     210   240            270         300           330           360
+                                                                                   [°]
+                                                                                                                                         Report    3754
+                                                                                                                                         Page       3.44
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.20
+
+                          1.0
+                                       x /D = 0.20, r /R = 0.99
+                          0.8
+                                                                                             _____                _____         _____
+                                                                                                     V x /V A-1           wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                           DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90        120   150   180     210   240        270         300          330           360
+                                                                              [°]
+
+
+
+                          1.0
+                                      x /D = 0.20, r /R = 1.00
+                          0.8
+                                                                                             _____                _____         _____
+                                                                                                     V x /V A-1           wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90        120   150   180     210   240        270         300          330           360
+                                                                              [°]
+
+
+
+                          1.0
+                                      x /D = 0.20, r /R = 1.01
+                          0.8
+                                                                                             _____                _____         _____
+                                                                                                     V x /V A-1           wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90        120   150   180     210   240        270         300          330           360
+                                                                              [°]
+                                                                                                                                             Report    3754
+                                                                                                                                             Page       3.45
+
+
+                                     Velocity components Vx/VA-1, wt, wr = f(), x/D = 0.20
+
+                          1.0
+                                      x /D = 0.20, r /R = 1.022
+                          0.8
+                                                                                            _____                    _____         _____
+                                                                                                        V x /V A-1            wt            wr
+                          0.6
+
+
+
+
+                                                                                                                                                               DIAGRAMS/DRAWINGS
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150     180     210   240            270         300           330           360
+                                                                             [°]
+
+
+
+                          1.0
+                                      x /D = 0.20, r /R = 1.032
+                          0.8
+                                                                                                _____                 _____         _____
+                                                                                                        V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150     180     210   240            270         300           330           360
+                                                                             [°]
+
+
+
+                          1.0
+                                       = 225°, x /D = 0.20, r /R = 1.042
+                          0.8
+                                                                                                _____                 _____         _____
+                                                                                                        V x /V A-1            wt            wr
+                          0.6
+
+
+                          0.4
+Vx /V A-1, w t, w r [-]
+
+
+
+
+                          0.2
+
+
+                          0.0
+
+
+                          -0.2
+
+
+                          -0.4
+
+
+                          -0.6
+
+
+                          -0.8
+                                 0      30      60     90     120   150     180     210   240            270         300           330           360
+                                                                             [°]
+                                              Report   3754
+                                              Page       4.1
+
+
+ Test arrangement in the cavitation tunnel
+
+
+
+
+Measurement of idle torque with a dummy hub
+
+
+
+
+                                                               PHOTOGRAPHS
+
+
+
+
+          Model propeller VP1304
+                                                                                       Report          3754
+                                                                                       Page            A1.1
+
+
+                                              Symbols
+
+
+symbol   name                                   definition or explanation                  SI - unit
+
+A0       Propeller disc area                    πD2/4                                           m2
+
+AE       Expanded blade area                    Expanded blade area of a screw                  m2
+                                                propeller outside the boss or hub
+
+c        Chord length                                                                            m
+
+CTh      Thrust loading coefficient             T / (AP qA) = (TP / AP) / qA                     1
+
+D        Propeller diameter                                                                      m
+
+dh       Boss or hub diameter                   2 rh                                             m
+
+DH2      Pressure difference                    Measured in the nozzle of the                   Pa
+                                                cavitation tunnel
+
+f        Camber of a foil section                                                                m
+
+f        Transmitting lens                                                                       m
+
+g        Acceleration of gravity                Weight force / mass, strength of the            m/s2
+                                                earth gravity field
+
+h0       Immersion                              The depth of submergence of the                  m
+                                                propeller measured vertically from the
+
+
+
+
+                                                                                                              ANNEX
+                                                propeller centre to the free surface
+
+J        Propeller advance ratio                VA / (D n)                                       1
+
+KQ       Torque coefficient                     Q / (ρ n2 D5)                                    1
+
+KT       Thrust coefficient                     T / ((ρ n2 D4)                                   1
+
+n        Frequency or rate of revolution        Alias RPS (RPM in some propulsor                s-1
+                                                applications)
+
+Ρ        Propeller pitch in general                                                              m
+
+p        Pressure                                                                               Pa
+
+pA       Ambient pressure                                                                       Pa
+
+pC       Pressure within a steady or quasi-                                                     Pa
+         steady cavity
+
+p0       Ambient pressure in undisturbed flow                                                   Pa
+
+pV       Vapour pressure of water               At a given temperature!                         Pa
+
+P/D      Pitch ratio of propeller                                                                1
+
+PD       Delivered power, propeller power       Qω                                              W
+
+Q        Torque                                 PD / ω                                          Nm
+                                                                                      Report         3754
+                                                                                      Page           A1.2
+
+
+                                             Symbols
+
+symbol   name                                      definition or explanation               SI - unit
+
+q        Dynamic pressure, density of kinetic      ρ V²/ 2                                     Pa
+         flow energy,
+
+R        Radius                                                                                m
+
+r        Radius                                                                                m
+
+                                                   Re  c0.7 /   V 2  0.7 Dn
+Re       Reynolds number                                                         2             1
+
+
+rh       Hub radius                                                                            m
+
+T        Propeller thrust                                                                      N
+
+Tu       Turbulence degree                                                                     %
+
+tW       Temperature of water                                                                  °C
+
+tA       Temperature of air
+
+t        Blade section thickness                                                               m
+
+V        Velocity of a body, speed in general of                                               m/s
+         the model or the ship
+
+VA       Advance speed of propeller                Equivalent propeller open water speed       m/s
+
+
+
+
+                                                                                                            ANNEX
+                                                   based on thrust or torque identity
+
+Vper     Periodical velocity                                                                   m/s
+
+VR       Radial velocity component                                                             m/s
+
+VS       Ship speed                                                                            m/s
+
+Vsta     Stationary velocity                                                                   m/s
+
+Vsto     Stochastic velocity                                                                   m/s
+
+VT       Tangential velocity component                                                         m/s
+
+Vx       Velocity component in x-direction                                                     m/s
+
+Vy       Velocity component in y-direction                                                     m/s
+
+Vz       Velocity component in z-direction                                                     m/s
+
+w        Wake fraction in general                  w = 1 - V / VA                              1
+
+wa       Wake fraction in axial direction          wa = 1 - Vx / VA                            1
+
+wt       Wake fraction in tangential               wt = VT / VA                                1
+         direction
+wr       Wake fraction in radial direction         wr = VR / VA                                1
+                                                                                              Report          3754
+                                                                                              Page            A1.3
+
+
+                                                  Symbols
+
+symbol      name                                      definition or explanation                   SI - unit
+
+Z, z        Number of propeller blades                                                                  1
+
+          Solved gas content                                                                         mg/l
+
+S          Solved gas content at saturation                                                           mg/l
+
+           Angle of rake                                                                              deg
+
+ηO          Propeller efficiency in open water        PT / PD = T VA / (Q ω) all quantities             1
+                                                      measured in open water tests
+
+θ           Angle of propeller blade position                                                          deg
+
+θEXT        Skew angle extent                         The difference between maximum and               deg
+                                                      minimum local skew angle
+
+λ           Scale ratio, linear scale of ship model   Ship (index S) dimension divided by               1
+                                                      corresponding model (index M)
+                                                      dimension λ = LS / LM = BS / BM
+
+v           Kinematic viscosity                       μ/ρ                                              m2/s
+
+π           Circular constant                         3.1415926535                                      1
+
+ρ           Mass density of fluid                     dm / dV                                      kg/m3
+
+
+
+
+                                                                                                                     ANNEX
+ω           Circular frequency                        2πf                                              1/s
+
+ω           Propeller rotational velocity             2πn                                              1/s
+
+                                                  Indices
+
+    index    Name                                      definition or explanation
+    A        Air
+    c        Velocity correction by Glauert
+             method
+    c        Construction, design
+    M        Model
+    S        Ship
+    max      Maximum
+    min      Minimum
+    V        Venturi
+    W        Water
+    0.7      Related radius r/R = 0.7
+                                                                                                              Report         3754
+                                                                                                              Page           A2.1
+
+
+                                              Methods and formulas
+
+Open water test in the cavitation tunnel
+
+The open water tests were carried out with the dynamometer J25 from Kempf & Remmers in the
+cavitation tunnel K15A. The influence of the test section on the propeller coefficients was
+corrected with the method from Glauert.
+
+
+Measuring values:            T, Q, n, V, p
+                                                                                 with Glauert correction
+
+                                       V                                                  Vc
+Advance coefficient          J                                                   Jc 
+                                     nD                                                 nD
+
+                                                                      T
+Thrust coefficient                                       KT 
+                                                                    n2  D4
+
+                                                                      Q
+Torque coefficient                                       KQ 
+                                                                    n 2  D5
+
+                                      J KT                                                   J c KT
+Propeller efficiency         O                                                Oc           
+                                     2 K Q                                                  2 K Q
+
+
+                                               V 2  0.7  D    n                               Vc2  0.7  D    n 
+                                       c0.7                                                  c0.7
+
+
+
+
+                                                                                                                                    ANNEX
+                             Re                                                  Rec 
+                                                                            2                                                 2
+Reynolds number
+                                                                                            
+
+                                       8 KT                                                  8 KT
+Thrust loading coefficient   CTh                                               CThc        
+                                        J2                                                   J c2
+
+                                       pstat  pv                                            pstatc  pv
+Cavitation numbers           V                                                  Vc 
+                                                                                             
+                                              V 2                                                    Vc2
+                                         2                                                       2
+
+                                       pstat  pv                                             pstatc  pv
+                             n                                                  nc 
+                                                                                            
+                                          n  D                                                n  D 
+                                                     2                                                       2
+
+                                     2                                                       2
+
+                                                     pstat  pv                                          pstatc  pv
+                              0.7                                               0.7 c 
+                                                                                            
+                                               V  0.7  n  D                                Vc  0.7  n  D 
+                                                                       2                                                 2
+
+                                         2                                                   2
+                                                                                     Report       3754
+                                                                                     Page         A2.2
+
+
+Laser Doppler Velocimetry System
+
+At the cavitation tunnel of the SVA Potsdam a 2D-LDV measurement system of the firm TSI is
+available for multi-component velocity measurements. With the LDV-system quasi punctual,
+contactless flow measurements can be carry out without disturbance of the flow. The measuring
+position is the intersection point of the laser beams. A lamellar interference field forms in this
+intersecting volume. The velocities of small scatter particles with a size down to the m region,
+which pass the measuring volume, are recorded. As measuring signal the scatter light of the
+particle from the interference field in the measuring volume are detected by light sensible
+photomultiplier and with it the velocity of the scatter particle itself transformed in a proportional
+frequency. An advantage of the LDV is that the calibration factors for the determination of the
+velocity in the measuring volume are only depending from the optical configuration and the
+wave length of the laser light. Both parameters are known and do not changed over the utilisation
+time. For further comments regarding the physically basis of a LDV systems and their realisation
+possibilities there is to refer to [4] and [5].
+
+As optical unit a 4-ray-standard compact probe comes into application. With this probe a
+simultaneous recording of 2 velocity components in back scatter operation is possible. An
+adaptation of the dimensions of the measuring volume or of the required focal distance can be
+reached with a compatible set of transmit lenses and an additional beam broadening unit (table
+A2.1).
+
+The laser measurements can be carried out from the side and bottom-up. As far as the optical
+access to the flow permits, the 3rd velocity component can be measured in a second run. The
+arrangement of the LDV probe and the definition of the coordinate system can be seen in the
+figure A2.1. A 4 Watt Argon Laser is used. The signal processing is carried out via the two
+channel signal processor IFA 650. The control system of the test procedure including the
+
+
+
+
+                                                                                                         ANNEX
+traversing unit and the data analysis is conducted with a PC.
+
+Over 3 Piacryl windows the optical access is given into the measuring section (2 times on the
+side and on the bottom).
+
+Table A2.1: Possible optical sensor configurations, data in water for colour green
+                                                                    Dimensions of measuring
+Focal distance Ray distance      Strip distance   Intersecting
+                                                                            volume
+       f           s                  x          angle /2
+    [mm]                                                            Diameter       Length
+                  [mm]                [m]             [°]
+                                                                      [m]          [mm]
+      261              50             2.69             4.1              65           0.9
+      365              50             3.73             3.0              90           1.7
+      512              50             5.27             2.1             128           3.4
+      610              50             6.28             1.8             152           4.9
+      480             130             1.90             5.8              46           0.4
+                                                                           Report      3754
+                                                                           Page        A2.3
+
+
+
+
+Figure A2.1: Beam arrangement of the LDV probe and co-ordinate system
+
+
+
+
+                                                                                              ANNEX
+Literature regarding LDV measurements
+
+Further information regarding the set-up of the LDV-Systems at the SVA Potsdam, about
+realised LDV measurements and achieved results are given in [A1], [A2], [A3], [A4], [A5],
+[A6], [A7].
+
+[A1]   Durst F.; Melling A.; Whitelaw, J. H.
+       Principles and practice of Laser Doppler Anemometrie
+       Academic Press, London – New York – San- Francisco 1976
+
+[A2]   Albrecht, H. E.
+       Ein Beitrag zur Laser-Doppler-Anemometrie
+       Dissertationsschrift (Prom. B) Rostock: Wilhelm Pieck Universität
+
+[A3]   Fuchs, W.
+       Praxis von Geschwindigkeitsmessungen mittels Laser-Doppler-Anemometer im
+       Kavitationskanal
+       Schiffbauforschung, Rostock 26 (1987) 3, S.131-142
+
+[A4]   Böer, W.-B.; Selke, W.; Junglewitz, A.
+       Einsatz der LDA-Meßtechnik bei hydrodynamischen Untersuchungen am Kavitationstunnel
+       der SVA Potsdam
+       Schiffbauforschung 29 (1990) S. 59-65
+                                                                             Report        3754
+                                                                             Page          A2.4
+
+
+[A5]   Mach, K.-P.
+       Einsatz eines 2-Komponenten LDA im hydrodynamischen Versuchswesen
+       Posdam-tech 93, 5.-6. November 1993
+
+[A6]   Mach, K.-P.
+       LDA Geschwindigkeitsmessungen am Kavitationstunnel
+       3. Fachtagung Lasermethoden in der Strömungsmesstechnik, 6.-8. Sept. 1994, Bremen
+
+[A7]   Schulze, R.; Mach, K.-P.
+       Vergleich von Rechnungen und LDA-Messungen der Geschwindigkeitsverteilung im
+       Propellerstrahl
+       Postersitzung DGLR-Kongreß 1994, 4.-7. Oktober 1994, Erlangen
+
+[AA8] Mach, K.-P.
+      LDA Geschwindigkeitsmessungen im Modellpropellernachstrom
+      4. Fachtagung Lasermethoden in der Strömungsmesstechnik, 13.-15. Sept. 1995, Rostock
+
+
+
+
+                                                                                                  ANNEX
+                                                                                      Report       3754
+                                                                                      Page         A2.5
+
+
+LDV measurements
+
+The target of the analysis is to calculate the several velocity components including the statistic
+data both as run over the angle of rotation of the propeller and as mean velocities at the
+measuring point.
+
+The initial point for the calculations are the LDV raw data, in which stored details regarding
+velocity, regarding discharge time of the scatter particles by the measuring volume, regarding
+arrival time of the scatter particle in the measuring volume as well as regarding momentary angle
+of rotation of the propeller in relation to zero impulse for each velocity components.
+
+The calculation of the data occurs at the angle dissolved LDV measurements in several steps. At
+first all LDV data are afferent sorted, which are collected over a multitude of numbers of
+revolutions of propeller, regarding the moment of data recording stored angle of rotation of the
+propeller.
+
+In a second step the validity of the single value from the measuring value ensemble is checked
+Thereby are tested, how far the single value lies inside of free selectable upper and lower speed
+limits. This is mainly necessary to eliminate noise components and mismeasurements (signals of
+large scatter particle or reflections of fixed or moved surfaces).
+
+In the figure A2.2 the screen menu is presented for determination of the validity limits. By V1U
+and V1O or. V2U and V2O the absolute limits for the velocity runs are indicated.
+
+In a further step the validity of the single value from the measuring value ensemble is checked by
+statistical methods. Usually the mean value and the standard deviation are composed for this
+over all values and the validity area determined over die numbers from +/- n standard deviations
+
+
+
+
+                                                                                                          ANNEX
+in relation to the mean value. At this method there is a problem if the validity region of the single
+value is held too small, than the existing velocity peaks marked as invalid and the velocity run
+are reflected false over the angles. If the validity area is elected in contrast to large, so that the
+velocity peaks are certain inside of the validity region, a separation of the disturbing signals is
+given no longer certain. With the scheduled angle dissolving of 1-2 degrees or the analysis and
+relative few measuring values inside of an angle category this leads to an intensified scattering of
+the values till to total false values at the averaging of the values inside these angle categories.
+
+Because a manual correction of the values is excluded aground a lots of data, the method for the
+estimation of the validity area was enlarged. With it the validity limits are determined no longer
+over the whole area, but rather gliding over the sub-domains of the velocity run as function of the
+angle of rotation of the propeller. The numbers of the angle categories are inserted as windows
+domain as well as the valid standard deviation for each signal for this.
+
+In the figures A2.2 to A2.4 these values are to find under statistic, validity area V1 or V2. With
+the help of the calculated mean value and the standard deviation the validity area will be
+estimated new for each angle category as well as the mean value and the standard deviation for
+each angle class.
+
+In the figures A2.2 to A2.4 results of the LDV measurements are presented exemplary. The
+single velocity values of V1 and V2 are marked with blue colour over the angle of rotations. The
+red curves below and above of the blue marked velocity curves show the validity region for the
+comprehension of the single measuring value in the averaging. Like to see from the runs, this
+method is an effective mean for the selection of the valid single measuring values. Besides the
+                                                                                    Report       3754
+                                                                                    Page         A2.6
+
+
+velocity run over the angle of rotation of the propeller, the frequency distribution of the several
+velocity categories is specified in [%].
+
+In the figure A2.2 there is identified clear the reflections from the surface or noise components
+around the velocity V1 = 0 for the velocity V1. With the described signal analysis these velocity
+parts allow to divide easy. Against it in the figure A2.3 (measurement at z = -7.5 mm and J =
+Jmin) an elimination of their disturbing signals and the rather measuring signals for some points is
+no longer possible.
+
+
+
+
+                                                                                                        ANNEX
+Figure A2.2: Screen menu for the determination of the validity limits for
+             the single measuring value
+                                                                            Report   3754
+                                                                            Page     A2.7
+
+
+
+
+Figure A2.3: Screen menu for determination and elimination of disturbing signals
+
+
+
+
+                                                                                            ANNEX
+
+
+
+
+Figure A2.4: Screen menu for determination a elimination of disturbing signals
+                                                                                                 Report      3754
+                                                                                                 Page        A2.8
+
+
+Like the figure A2.4 shows, it is possible to determine the validity region (inside of the red
+marked areas) by above described method for the single measuring value as far as, that the
+disturbing signals eliminate for the real calculation. Measuring values for missing angle
+categories are interpolate from the last valid till to the next valid measuring value linear.
+Aground of possible high velocity gradient the failure is to join here adequate high at the
+interpolation. But without additional supporting points it is not possible to improve the
+interpolation.
+
+The calculation of the statistical parameters over the angle as well as die for a measuring position
+averaged values happens about the following described equations 1 to 10. A bias correction of
+the measuring values will not carried out at the determination of the velocity mean values.
+
+Equation 1:              Velocity mean value inside of an angle category
+
+            n1                                k      elected angle category k
+           V ( k , j )                        n      numbers of values inside of the angle category k
+V ( k )  j 0                                 V(k,j) single values inside of the angle category k
+                     n
+
+Equation 2:              Standard deviation inside of an angle category
+
+
+              V k   V ( k , j )²
+             n1                               k        elected angle category k
+                                               n        number of values inside of the angle category k
+              j 0
+S( k )                                        V(k,j)    single values inside of the angle category k
+                             n                 V (k)     mean velocity in the angle category k
+
+
+
+
+                                                                                                                    ANNEX
+Equation 3:              Turbulence intensity of V in the angle category k in relation to 1D-velocity vector
+
+             S ( k )  100                     k     elected angle category k
+Tu( k )                   [%]                 S(k)   standard deviation in the angle category k
+                V( k )
+                                               V (k) mean velocity in the angle category k
+
+For the calculation of the turbulence degree of the single component V1, the standard deviation of
+these velocity components always related to the resulting velocity vector of 2 or 3 velocity
+components, if it is a question of a multi-dimensional velocity field measurement or of a
+composed 3-dimensionalen velocity field from 2D fields. So it results following equations:
+
+Equation 4:              Turbulence intensity von V1 in the angle category k in relation to 2D-velocity vector
+
+                     S1( k )  100                  k       elected angle category
+Tu1( k ) 
+                  V ( k )  V ( k )
+                     2           2
+                                         [%]        S1(k) standard deviation in the angle category k
+                     1           2
+                                                    V ( k ) mean velocities of V1 and V2 in the angle category k
+                                                                                                           Report      3754
+                                                                                                           Page        A2.9
+
+
+Equation 5:                 Turbulence intensity of V1 in the angle category k in relation to 3D-velocity vector
+
+                                  100S1( k )                         k       elected angle category k
+Tu1( k ) 
+                      V ( k )  V ( k )  V ( k )
+                        2               2         2
+                                                           [%]       S1(k)    standard deviation in the angle category k
+                        1               2         3
+                                                                     V1       mean velocities of V1, V2 and V3 in the
+                                                                              angle category k
+
+Below there are described die equations for the mean velocities and their statistic values at a
+measuring point:
+
+Equation 6:                     Ensemble mean value of the velocity at a point
+
+       n 1                                           n      number of angle category
+     V ( j )                                         V      velocity mean value
+V  j 0
+              n
+
+Equation 7:                     Standard deviation of the velocity at a point
+
+
+          V  V ( j )²
+         n1                                          V(j)   mean velocity in the angle category j
+                                                      n      numbers of angle category
+         j 0
+S                                                    V       velocity mean value
+                       n
+
+Equation 8:                 Turbulence intensity of V in relation to 1D-velocity vector
+
+        S  100                                       S          standard deviation
+Tu             [%]
+
+
+
+
+                                                                                                                              ANNEX
+          V                                           V          mean velocity
+
+For the calculation of the turbulence degree of the single component V1, the standard deviation of
+these velocity components always related to the resulting velocity vector of 2 or 3 velocity
+components, if it is a question of a multi-dimensional velocity field measurement or of a
+composed 3-dimensionalen velocity field from 2D fields. So it results following equations:
+
+Equation 9:                 Turbulence intensity of V1 in relation to 2D-velocity vector
+
+              S1  100                                S1        standard deviation of V1
+Tu1 
+              V  V 
+                                  [%]
+                  2         2                         V 1 , V 2 mean velocities of V1 and V2
+                  1         2
+
+
+
+
+Equation 10: Turbulence intensity of V1 in relation to 3D-velocity vector
+
+                  S1  100                            S1(k) standard deviation in the angle category k
+Tu1 
+              V  V  V 
+                                            [%]
+                  2         2       2                 V 1 (k) mean velocities of V1, V2 and V3
+                  1         2       3
+
+
+
+
+The results for the calculated mean velocities are available in Microsoft word data sets format as
+journal data sets for the several measurements. The data for the angle disbanded velocity curves
+are stored in excel-data-sets, in which each work sheet data for a measuring point contains.
+                                                                   Report   3754
+                                                                   Page     A3.1
+
+
+                     Co-ordinate system
+
+
+
+Cylindrical propeller coordinate system looking on pressure side
+
+
+
+
+                                                                                   ANNEX
+

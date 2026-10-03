@@ -1,0 +1,1065 @@
+      Potsdam Propeller Test Case (PPTC)
+
+                 Open Water Tests
+          with the Model Propeller VP1304
+
+
+
+                               Report 3752
+
+
+
+
+                          Potsdam, April 2011
+
+
+
+
+Schiffbau-Versuchsanstalt Potsdam GmbH, Marquardter Chaussee 100, 14469 Potsdam
+         Tel. +49 331 56712-0, Fax +49 331 56712-49, www.sva-potsdam.de
+                                                                  Report   3752
+                                                                  Page       1.1
+
+
+
+                        Potsdam Propeller Test Case (PPTC)
+
+                                Open Water Tests
+                         with the Model Propeller VP1304
+
+
+Client                        Schiffbau-Versuchsanstalt Potsdam GmbH
+                              Marquardter Chaussee 100
+                              14469 Potsdam
+                              Tel. +49 331 56712-0
+                              Fax +49 331 56712-49
+
+
+
+
+Contractor                    Schiffbau-Versuchsanstalt Potsdam GmbH
+                              Marquardter Chaussee 100
+                              14469 Potsdam
+                              Tel. +49 331 56712-0
+                              Fax +49 331 56712-49
+
+
+
+
+Author                        Dipl.-Ing. U. H. Barkmann
+
+
+
+This report includes           5   pages text
+                              13   pages tables
+                               4   pages diagrams/drawings
+                               3   pages photographs
+                               5   pages annex
+
+Potsdam, 15/04/2011
+
+
+
+
+                 Management                                  Author
+                                                                                                                     Report              3752
+                                                                                                                     Page                  1.2
+
+
+
+Content
+
+Text                                                                                                                                       Page
+1          Summary ...................................................................................................................... 1.3
+2          Introduction.................................................................................................................. 1.3
+3          Tasks ............................................................................................................................ 1.3
+4          Description of the model propeller VP1304 ................................................................ 1.4
+5          Test arrangement ......................................................................................................... 1.4
+6          Test procedure ............................................................................................................. 1.5
+7          Open water test results ................................................................................................. 1.5
+8          References .................................................................................................................... 1.6
+
+Tables
+Details of model tests .............................................................................................................. 2.1
+Overview of model tests in the towing tank ............................................................................ 2.2
+Pre-test with dummy hub, V = 0 m/s ....................................................................................... 2.3
+Pre-test with dummy hub, n = 10 s-1........................................................................................ 2.4
+Pre-test with dummy hub, n = 15 s-1........................................................................................ 2.5
+Open water test, n = 10 s-1 ....................................................................................................... 2.6
+Open water test, n = 15 s-1 ..................................................................................................... 2.10
+
+Diagrams/Drawings
+Model propeller VP1304 ......................................................................................................... 3.1
+Propeller VP1304 .................................................................................................................... 3.2
+VP1304 in open water configuration ....................................................................................... 3.2
+Open water characteristics of VP1304 .................................................................................... 3.3
+
+Photographs
+Model propeller VP1304 ......................................................................................................... 4.1
+Dummy hub configuration ...................................................................................................... 4.2
+VP1304 with caps .................................................................................................................... 4.2
+Dynamometer H39 with VP1304 ............................................................................................ 4.3
+
+Annex
+Symbols ................................................................................................................................ A1.1
+Methods and procedures ....................................................................................................... A2.1
+Coordinate system ................................................................................................................ A3.1
+                                                                            Report       3752
+                                                                            Page           1.3
+
+
+
+
+1      Summary
+
+For the SMP’11 workshop the SVA provided the controllable pitch propeller VP1304 as a test
+case. Several investigations were conducted with this propeller: open water tests, cavitation
+tests [1] and LDV measurements [2].
+
+The open water characteristics are presented on pages 3.2 and 3.3.
+
+The influence of the hub and gab forces on the open water characteristic was analysed.
+
+
+2      Introduction
+
+In the intention to offer research groups the possibility to test and validate their numerical
+tools the SVA investigates the controllable pitch propeller VP1304. The measurements shall
+contribute to a better numerical prediction of open water characteristics.
+
+Furthermore the propeller VP1304 shall become a standard test propeller within the SVA and
+is presented by the name PPTC, an acronym for “Potsdam Propeller Test Case”. Therefore
+extensive tests shall expand the measurement data of this propeller.
+
+In this report the open water characteristics measured in the towing tank of the SVA are
+presented.
+
+It should be pointed out that the SVA reports 3753 [1] and 3754 [2] deal with the cavitation
+tests and the Laser Doppler Velocimetry (LDV) measurements respectively.
+
+
+3      Tasks
+
+The model propeller VP1304 was tested in the towing tank of the Potsdam Model Basin in
+homogeneous flow.
+
+Open water characteristics were measured at two different numbers of revolutions
+(n = 10 and 15 s-1).
+
+Furthermore the resistance and idle torque of the propeller hub was investigated at the same
+velocities and numbers of revolutions with a dummy hub.
+                                                                              Report       3752
+                                                                              Page           1.4
+
+
+
+
+4      Description of the model propeller VP1304
+
+The propeller was designed by the SVA in 1998. For the manufacture of the propeller cold-
+rolled brass was used as raw material. The blades were manufactured on a CNC-based milling
+machine with HSC (high speed cutting) technology.
+
+The propeller main properties are shown in table 1 and in the drawing on page 3.1. Photos of the
+propeller are shown on page 4.1.
+
+The propeller is a controllable pitch propeller. This affects the propeller blade design near the
+hub and results in a 0.3 mm gap between hub and propeller blade near the leading and trailing
+edge of the propeller.
+
+Table 1: Main data of model propeller VP1304
+
+                                                                 VP1304
+    Diameter                        D          [m]              0.250
+    Pitch ratio r/R = 0.7           P0.7/D     [–]              1.635
+    Area ratio                      AE/A0      [–]              0.77896
+    Chord length r/R = 0.7          c0.7       [m]              0.10417
+    Skew                            θEXT        [°]            18.837
+    Hub ratio                       dh/D       [–]              0.300
+    Number of blades                Z          [–]              5
+    Sense of rotation                          [–]              right
+    Type                                       [–]        controllable pitch propeller
+
+
+5      Test arrangement
+
+For the open water tests the dynamometer H39 from Kempf & Remmers has been arranged
+behind the propeller model. The assembly of caps, hub and propeller is shown on page 4.2.
+On page 4.3 the dynamometer H39 and the VP1304 are presented.
+                                                                            Report       3752
+                                                                            Page           1.5
+
+
+
+
+6      Test procedure
+
+Apart from the calibration of the measuring device, runs have been made in order to measure
+the idle torque and the resistance of the hub cap with the dummy hub, having the same shape
+and mass as the real propeller hub.
+
+Therefore the test 11F0391 provided data about the force and torque due to gap flows
+between hub and dynamometer shaft as well as the influence of the bearings for the condition
+V = 0 m/s.
+
+The test runs 11F0392 and 11F0393 show the resistance and torque of the hub without blades
+for different advance coefficients. To eliminate the influence of the dynamometer bearings all
+following torque data were corrected by the dummy hub values.
+
+In order to obtain the thrust create by the propeller blades the measured thrust was corrected
+by the resistance of the dummy hub.
+
+The open water tests were carried out at two different numbers of revolutions to evaluate the
+dependency on the Reynolds number.
+
+
+7      Open water test results
+
+The measurements with different numbers of revolutions feature an influence of the Reynolds
+number on the open water characteristic (see page 3.1). The characteristics of KT and 10KQ at
+higher numbers of revolutions show a smaller gradient and cross the characteristics of lower
+numbers of revolutions at an advance coefficient of J = 1.3.
+Therefore the open water efficiency maximum of ηO = 0.7 is reached at higher Reynolds
+numbers and the advance coefficient J = 1.29 for the propeller without a hub correction (see
+page 3.2).
+The correction of the measured propeller thrust with the hub resistance leads to significant
+higher efficiencies and advance coefficients J(ηO,max). The maxima efficiencies of all
+configurations are summarised in table 2.
+Table 2: Open water efficiency maxima (by polynomials)
+
+             rps [s-1]        configuration        J(ηOmax) [-]          ηOmax [-]
+                10           blades and hub            1.27             0.690
+                10           only blades               1.33             0.738
+                15           blades and hub            1.29             0.700
+                15           only blades               1.36             0.751
+                                                                          Report      3752
+                                                                          Page          1.6
+
+
+
+8     References
+
+[1]   Heinke, H.–J.
+      Potsdam Propeller Test Case (PPTC) - Cavitation Tests with the Model Propeller VP1304
+      Report 3753, Schiffbau-Versuchsanstalt Potsdam, April 2011
+[2]   Mach, K.-P.
+      Potsdam Propeller Test Case (PPTC) - LDV velocity measurements with the Model
+      Propeller VP1304
+      Report 3754, Schiffbau-Versuchsanstalt Potsdam, April 2011
+                                                                         Report   3752
+                                                                         Page       2.1
+
+
+
+
+                                                                                          TABLES
+                              Details of model tests
+
+VP1304
+Towing tank
+Dimensions of towing tank             280 x 9 x 4.5 m
+
+Propeller:                            VP1304
+Propeller type                        controllable pitch propeller
+Material of model propeller           brass
+Diameter of the propeller             0.25 m
+Sense of rotation                     right (looking on pressure side)
+
+Arrangement:
+Shaft inclination                     0°
+Dynamometer shaft                     behind the propeller
+
+Measuring equipment:                  dynamometer H39
+                                      nmax = 60 s-1
+                                      Tmax = 1 kN
+                                      Qmax = 50 Nm
+                                                                             Report       3752
+                                                                             Page           2.2
+
+
+
+
+                                                                                                  TABLES
+                       Overview of model tests in the towing tank
+
+Test No.    Date             Test             Test parameters         Table       Diagram
+                     Idle torque and gap         V = 0 m/s
+11F0391 08/04/2011                                                     2.3            -
+                   forces with dummy hub       n = 10 - 20 s-1
+                    Idle torque and forces     V = 0 – 4 m/s
+11F0392 08/04/2011                                                     2.4            -
+                       with dummy hub            n = 10 s-1
+                    Idle torque and forces     V = 0 – 6 m/s
+11F0393 08/04/2011                                                     2.5            -
+                       with dummy hub            n = 15 s-1
+                                              V = 0 – 4.14 m/s
+11F0394 08/04/2011      Open water test                              2.6 - 2.9    3.1, 3.2
+                                                 n = 10 s-1
+                                              V = 0 – 6.3 m/s
+11F0395 08/04/2011      Open water test                             2.10 - 2.13   3.1, 3.2
+                                                 n = 15 s-1
+                                                                               Report      3752
+                                                                               Page          2.3
+
+
+
+
+                                                                                                   TABLES
+                                Pre-test with dummy hub, V = 0 m/s
+
+Test                 11F0391                                           Date          08.04.2011
+Type of test         Idle torque and gap force measurement with dummy hub, V = 0 m/s
+Particulars of the dummy hub
+dh               [m] 0.075
+Sense of rotation     right-handed
+Environmental data
+tW              [°C] 15.6                     ν   [m²/s]     1.124e-6 ρ       [kg/m³]    998.99
+Propeller shaft      downstream
+
+
+Measured values
+No.       V         n        R         Q
+        [m/s]     [rps]     [N]      [Nm]
+   1     0.000     9.988    -0.44     0.205
+   2     0.000    10.035    -0.38     0.189
+   3     0.000    14.985    -0.72     0.200
+   4     0.000    15.043    -0.73    0.228
+   5     0.000    20.029    -1.28    0.229
+                                                                                 Report        3752
+                                                                                 Page            2.4
+
+
+
+
+                                                                                                       TABLES
+                                   Pre-test with dummy hub, n = 10 s-1
+
+Test                  11F0392                                           Date              08.04.2011
+Type of test          Idle torque and force measurement with dummy hub, n = 10 s-1
+Particulars of the dummy hub
+dh               [m] 0.075
+Sense of rotation     right-handed
+Environmental data
+tW              [°C] 15.6                     ν     [m²/s]       1.124e-6 ρ     [kg/m³]      998.99
+Propeller shaft      downstream
+
+
+Measured values
+No.       V         n       R          Q
+        [m/s]     [rps]    [N]       [Nm]
+   1     0.000    10.035   -0.46      0.215
+   2     1.000    10.033   -1.75      0.198
+   3     2.000    10.033   -3.08      0.201
+   4    2.999     10.034   -5.30      0.206
+   5    4.000     10.032   -8.40      0.207
+                                                                                 Report        3752
+                                                                                 Page            2.5
+
+
+
+
+                                                                                                       TABLES
+                                Pre-test with dummy hub, n = 15 s-1
+
+Test                  11F0393                                           Date              08.04.2011
+Type of test          Idle torque and force measurement with dummy hub, n = 15 s-1
+Particulars of the dummy hub
+dh               [m] 0.075
+Sense of rotation     right-handed
+Environmental data
+tW              [°C] 15.6                     ν   [m²/s]        1.124e-6 ρ      [kg/m³]      998.99
+Propeller shaft      downstream
+
+
+Measured values
+No.       V         n        R         Q
+        [m/s]     [rps]     [N]      [Nm]
+   1     0.000    14.985    -0.77     0.214
+   2     0.999    15.036    -2.88     0.210
+   3     1.998    15.035    -4.34     0.215
+   4    3.000     15.034    -6.51    0.215
+   5    4.001     15.030    -9.55    0.215
+   6    5.002     15.029   -13.62    0.219
+   7    6.000     15.029   -18.45    0.223
+                                                                                      Report        3752
+                                                                                      Page            2.6
+
+
+
+
+                                                                                                            TABLES
+                                      Open water test, n = 10 s-1
+
+Test                 11F0394                                               Date                08.04.2011
+Type of test         Open water test, corrected with idle torque and gap force
+Particulars of the propulsor
+Propeller             VP1304                  D        [m]          0.25000 P0.7/D       [-]     1.63500
+Sense of rotation     right-handed            c0.7     [m]          0.10417 dh/D         [-]     0.30000
+Environmental data
+tW              [°C] 15.6                     ν      [m²/s]         1.124e-6 ρ       [kg/m³]      998.99
+Propeller shaft      downstream
+
+
+Measured and corrected values
+No.       V        n        T          Q
+        [m/s]    [rps]     [N]       [Nm]
+   1     0.000   9.981    371.07     20.217
+   2     0.399   9.981    347.16     18.867
+   3     0.803   9.982    310.51     16.885
+   4    1.202    9.982    272.74     15.032
+   5    1.602    9.983    234.67     13.291
+   6    2.002    9.985    198.42     11.665
+   7    2.399    9.986    163.50     10.116
+   8    2.799    9.987    126.06      8.374
+   9    3.203    9.986     90.19      6.646
+  10    3.600    9.984     54.60      4.890
+  11    3.999    9.985     11.14      2.605
+  12    4.136    9.988     -4.91      1.738
+                                                                                                 Report        3752
+                                                                                                 Page            2.7
+
+
+
+
+                                                                                                                       TABLES
+                                          Open water test, n = 10 s-1
+
+Test                      11F0394                                               Date                      08.04.2011
+Type of test              Open water test, corrected with idle torque and gap force
+Particulars of the propulsor
+Propeller             VP1304                     D            [m]              0.25000 P0.7/D       [-]     1.63500
+Sense of rotation     right-handed               c0.7         [m]              0.10417 dh/D         [-]     0.30000
+Environmental data
+tW              [°C] 15.6                        ν        [m²/s]              1.124e-6 ρ        [kg/m³]      998.99
+Propeller shaft      downstream
+
+
+Characteristic of propeller (model scale)
+No.        J          KT         10KQ       ηO          CTh           Re
+                                                                    [10-6]
+   1    0.0000       0.9545      2.0801     0.000       999.99       0.509
+   2    0.1600       0.8929      1.9412     0.117        88.78       0.510
+   3    0.3217       0.7986      1.7370     0.235        19.65       0.514
+   4    0.4816       0.7014      1.5463     0.348         7.70      0.521
+   5    0.6418       0.6034      1.3669     0.451         3.73      0.530
+   6    0.8021       0.5100      1.1994     0.543         2.02      0.542
+   7    0.9610       0.4202      1.0399     0.618         1.16      0.555
+   8    1.1212       0.3239      0.8606     0.672         0.66      0.571
+   9    1.2830       0.2318      0.6832     0.693         0.36      0.589
+  10    1.4422       0.1404      0.5029     0.641         0.17      0.608
+  11    1.6021       0.0286      0.2678     0.273         0.03      0.630
+  12    1.6563      -0.0126      0.1786    -0.186        -0.01      0.637
+
+Coefficients of polynoms
+p                    a0            a1            a2             a3                  a4
+KT             0.956454     -0.347156     -0.584163       0.525066           -0.156480
+10KQ           2.086429     -0.908317     -0.748857       0.857837           -0.298699
+Valid in area 0.000 <= J <= 1.656, p(x) = a0 + a1x + a2x2 + a3x3 + a4x4
+                                                                                      Report        3752
+                                                                                      Page            2.8
+
+
+
+
+                                                                                                            TABLES
+                                      Open water test, n = 10 s-1
+
+Test                 11F0394                                               Date                08.04.2011
+Type of test         Open water test, corrected with idle torque and hub resistance
+Particulars of the propulsor
+Propeller             VP1304                  D        [m]          0.25000 P0.7/D       [-]     1.63500
+Sense of rotation     right-handed            c0.7     [m]          0.10417 dh/D         [-]     0.30000
+Environmental data
+tW              [°C] 15.6                     ν      [m²/s]         1.124e-6 ρ       [kg/m³]      998.99
+Propeller shaft      downstream
+
+
+Measured and corrected values
+No.       V        n        T          Q
+        [m/s]    [rps]     [N]       [Nm]
+   1     0.000   9.981    371.10     20.217
+   2     0.399   9.981    347.51     18.867
+   3     0.803   9.982    311.29     16.885
+   4    1.202    9.982    274.06     15.032
+   5    1.602    9.983    236.63     13.291
+   6    2.002    9.985    201.12     11.665
+   7    2.399    9.986    167.04     10.116
+   8    2.799    9.987    130.55      8.374
+   9    3.203    9.986     95.74      6.646
+  10    3.600    9.984     61.30      4.890
+  11    3.999    9.985     19.10      2.605
+  12    4.136    9.988      3.50      1.738
+                                                                                               Report        3752
+                                                                                               Page            2.9
+
+
+
+
+                                                                                                                     TABLES
+                                         Open water test, n = 10 s-1
+
+Test                      11F0394                                               Date                    08.04.2011
+Type of test              Open water test, corrected with idle torque and hub resistance
+Particulars of the propulsor
+Propeller             VP1304                    D               [m]          0.25000 P0.7/D       [-]     1.63500
+Sense of rotation     right-handed              c0.7            [m]          0.10417 dh/D         [-]     0.30000
+Environmental data
+tW              [°C] 15.6                       ν            [m²/s]         1.124e-6 ρ        [kg/m³]      998.99
+Propeller shaft      downstream
+
+
+Characteristic of propeller (model scale)
+No.        J         KT         10KQ       ηO          CTh          Re
+                                                                  [10-6]
+   1    0.0000      0.9546      2.0801    0.000        999.99      0.509
+   2    0.1600      0.8939      1.9412    0.117         88.87      0.510
+   3    0.3217      0.8006      1.7370    0.236         19.70      0.514
+   4    0.4816      0.7048      1.5463    0.349          7.74     0.521
+   5    0.6418      0.6084      1.3669    0.455          3.76     0.530
+   6    0.8021      0.5170      1.1994    0.550          2.05     0.542
+   7    0.9610      0.4293      1.0399    0.631          1.18     0.555
+   8    1.1212      0.3354      0.8606    0.695          0.68     0.571
+   9    1.2830      0.2460      0.6832    0.735          0.38     0.589
+  10    1.4422      0.1576      0.5029    0.719          0.19     0.608
+  11    1.6021      0.0491      0.2678    0.467          0.05     0.630
+  12    1.6563      0.0090      0.1786    0.133          0.01     0.637
+
+Coefficients of polynoms
+p                    a0            a1            a2                a3             a4
+KT             0.956529     -0.342733     -0.579025          0.525112      -0.156494
+10KQ           2.086429     -0.908317     -0.748857          0.857837      -0.298699
+Valid in area 0.000 <= J <= 1.656, p(x) = a0 + a1x + a2x2 + a3x3 + a4x4
+                                                                                     Report        3752
+                                                                                     Page           2.10
+
+
+
+
+                                                                                                           TABLES
+                                     Open water test, n = 15 s-1
+
+Test                 11F0395                                               Date               08.04.2011
+Type of test         Open water test, corrected with idle torque and gap force
+Particulars of the propulsor
+Propeller             VP1304              D         [m]            0.25000 P0.7/D       [-]     1.63500
+Sense of rotation     right-handed        c0.7      [m]            0.10417 dh/D         [-]     0.30000
+Environmental data
+tW              [°C] 15.6                 ν       [m²/s]           1.124e-6 ρ       [kg/m³]      998.99
+Propeller shaft      downstream
+
+
+Measured and corrected values
+No.       V        n         T         Q
+        [m/s]    [rps]      [N]      [Nm]
+   1     0.000   14.984    835.00    45.315
+   2     0.500   14.984    792.09    42.773
+   3     1.000   14.983    726.41    39.186
+   4    1.501    14.983    651.87    35.385
+   5    2.000    14.982    580.78    32.073
+   6    2.500    14.981    512.66    29.013
+   7    3.000    15.026    445.10    26.071
+   8    3.498    15.023    378.40    23.102
+   9    4.000    14.978    309.71    19.907
+  10    4.500    14.974    244.70    16.791
+  11    5.000    15.028    183.45    13.880
+  12    5.502    15.080    123.69    10.968
+  13    6.002    15.026     37.93     6.419
+  14    6.301    15.029    -15.03     3.545
+                                                                                                 Report        3752
+                                                                                                 Page           2.11
+
+
+
+
+                                                                                                                       TABLES
+                                          Open water test, n = 15 s-1
+
+Test                      11F0395                                               Date                      08.04.2011
+Type of test              Open water test, corrected with idle torque and gap force
+Particulars of the propulsor
+Propeller             VP1304                     D            [m]              0.25000 P0.7/D       [-]     1.63500
+Sense of rotation     right-handed               c0.7         [m]              0.10417 dh/D         [-]     0.30000
+Environmental data
+tW              [°C] 15.6                        ν        [m²/s]              1.124e-6 ρ        [kg/m³]      998.99
+Propeller shaft      downstream
+
+
+Characteristic of propeller (model scale)
+No.        J          KT         10KQ       ηO          CTh           Re
+                                                                    [10-6]
+   1    0.0000       0.9531      2.0689     0.000       999.99       0.764
+   2    0.1334       0.9041      1.9529     0.098       129.44       0.765
+   3    0.2670       0.8292      1.7892     0.197        29.63       0.769
+   4    0.4006       0.7442      1.6158     0.294        11.81      0.776
+   5    0.5341       0.6631      1.4648     0.385         5.92      0.786
+   6    0.6676       0.5854      1.3251     0.469         3.34      0.798
+   7    0.7985       0.5052      1.1836     0.542         2.02      0.815
+   8    0.9314       0.4297      1.0493     0.607         1.26      0.831
+   9    1.0683       0.3538      0.9096     0.661         0.79      0.849
+  10    1.2021       0.2797      0.7676     0.697         0.49      0.870
+  11    1.3308       0.2082      0.6300     0.700         0.30      0.895
+  12    1.4594       0.1394      0.4944     0.655         0.17      0.922
+  13    1.5978       0.0430      0.2914     0.376         0.04      0.947
+  14    1.6769      -0.0171      0.1609    -0.283        -0.02      0.963
+
+Coefficients of polynoms
+p                    a0            a1            a2             a3                  a4
+KT             0.955438     -0.346932     -0.629537       0.586304           -0.175174
+10KQ           2.076022     -0.949651     -0.719299       0.873861           -0.306054
+Valid in area 0.000 <= J <= 1.677, p(x) = a0 + a1x + a2x2 + a3x3 + a4x4
+                                                                                       Report        3752
+                                                                                       Page           2.12
+
+
+
+
+                                                                                                             TABLES
+                                     Open water test, n = 15 s-1
+
+Test                  11F0395                                               Date                08.04.2011
+Type of test          Open water test, corrected with idle torque and hub resistance
+Particulars of the propulsor
+Propeller             VP1304               D          [m]          0.25000 P0.7/D         [-]     1.63500
+Sense of rotation     right-handed         c0.7       [m]          0.10417 dh/D           [-]     0.30000
+Environmental data
+tW              [°C] 15.6                  ν       [m²/s]          1.124e-6 ρ       [kg/m³]        998.99
+Propeller shaft      downstream
+
+
+Measured values
+No.       V         n        T         Q
+        [m/s]     [rps]     [N]      [Nm]
+   1     0.000    14.984   835.00    45.315
+   2     0.500    14.984   792.62    42.773
+   3     1.000    14.983   727.63    39.186
+   4    1.501     14.983   653.97    35.385
+   5    2.000     14.982   583.92    32.073
+   6    2.500     14.981   517.02    29.013
+   7    3.000     15.026   450.84    26.071
+   8    3.498     15.023   385.70    23.102
+   9    4.000     14.978   318.74    19.907
+  10    4.500     14.974   255.63    16.791
+  11    5.000     15.028   196.45    13.880
+  12    5.502     15.080   138.95    10.968
+  13    6.002     15.026    55.60     6.419
+  14    6.301     15.029     4.17     3.545
+                                                                                               Report        3752
+                                                                                               Page           2.13
+
+
+
+
+                                                                                                                     TABLES
+                                         Open water test, n = 15 s-1
+
+Test                      11F0395                                               Date                    08.04.2011
+Type of test              Open water test, corrected with idle torque and hub resistance
+Particulars of the propulsor
+Propeller             VP1304                    D               [m]          0.25000 P0.7/D       [-]     1.63500
+Sense of rotation     right-handed              c0.7            [m]          0.10417 dh/D         [-]     0.30000
+Environmental data
+tW              [°C] 15.6                       ν            [m²/s]         1.124e-6 ρ        [kg/m³]      998.99
+Propeller shaft      downstream
+
+
+Characteristic of propeller (model scale)
+No.        J         KT         10KQ       ηO          CTh          Re
+                                                                  [10-6]
+   1    0.0000      0.9531      2.0689    0.000        999.99      0.764
+   2    0.1334      0.9047      1.9529    0.098        129.52      0.765
+   3    0.2670      0.8306      1.7892    0.197         29.68      0.769
+   4    0.4006      0.7466      1.6158    0.295         11.84     0.776
+   5    0.5341      0.6667      1.4648    0.387          5.95     0.786
+   6    0.6676      0.5903      1.3251    0.473          3.37     0.798
+   7    0.7985      0.5117      1.1836    0.549          2.04     0.815
+   8    0.9314      0.4380      1.0493    0.619          1.29     0.831
+   9    1.0683      0.3641      0.9096    0.681          0.81     0.849
+  10    1.2021      0.2922      0.7676    0.728          0.51     0.870
+  11    1.3308      0.2229      0.6300    0.749          0.32     0.895
+  12    1.4594      0.1566      0.4944    0.736          0.19     0.922
+  13    1.5978      0.0631      0.2914    0.551          0.06     0.947
+  14    1.6769      0.0047      0.1609    0.078          0.00     0.963
+
+Coefficients of polynoms
+p                    a0            a1            a2                a3             a4
+KT             0.955439     -0.343185     -0.623945          0.586207      -0.175145
+10KQ           2.076022     -0.949651     -0.719299          0.873861      -0.306054
+Valid in area 0.000 <= J <= 1.677, p(x) = a0 + a1x + a2x2 + a3x3 + a4x4
+                         Report   3752
+                         Page       3.1
+
+
+Model propeller VP1304
+
+
+
+
+                                          DIAGRAMS/DRAWINGS
+                                     Report   3752
+                                     Page       3.2
+
+
+        Propeller VP1304
+
+
+
+
+                                                      DIAGRAMS/DRAWINGS
+VP1304 in open water configuration
+                     2.20
+                                                                                 Measured open water characteristics - PPTC
+                                                                                 corrected with gap force and idle torque
+                                                                                 (represents the characteristics of the propeller blades including the hub)
+                     2.00
+                                                                                                           ______
+                                                                                                                    n = 10 s-1
+                                                                                                           ______   n = 15 s-1
+                     1.80
+
+                                                                                 Lines correspont to polynomials
+                                                        10KQ                     Signs correspond to measured or corrected values
+                     1.60
+
+
+
+                     1.40
+
+
+
+                     1.20
+
+
+
+                     1.00
+
+
+
+
+KT , 10KQ , ηO [-]
+                                            KT
+                     0.80
+                                                                                                                                                 ηO
+
+                     0.60
+                                                                                                                                                                          Open water characteristics of VP1304
+
+
+
+
+                     0.40
+
+
+
+                     0.20
+                                                                                                                                                                                                                 Page
+
+
+
+
+                     0.00
+                                                                                                                                                                                                                 Report
+
+
+
+
+                            0   0.1   0.2   0.3   0.4    0.5   0.6   0.7   0.8   0.9       1        1.1       1.2         1.3    1.4       1.5        1.6     1.7   1.8
+                                                                                 J [-]
+                                                                                                                                                                                                                   3.3
+                                                                                                                                                                                                                 3752
+
+
+
+
+                                                                                                                         DIAGRAMS/DRAWINGS
+                     2.20
+                                                                                 Measured open water characteristics - PPTC
+                                                                                 corrected with gap force, hub resistance and idle torque
+                     2.00                                                        (represents the characteristics of the propeller blades )
+                                                                                                           ______   n = 10 s -1
+                                                                                                           ______   n = 15 s -1
+                     1.80
+
+                                                        10KQ                     Lines correspont to polynomials
+                     1.60                                                        Signs correspond to measured or corrected values
+
+
+
+                     1.40
+
+
+
+                     1.20
+
+
+
+                     1.00
+
+
+
+
+KT , 10KQ , ηO [-]
+                                            KT
+                     0.80
+                                                                                                                                                   ηO
+
+                     0.60
+                                                                                                                                                                          Open water characteristic of VP1304
+
+
+
+
+                     0.40
+
+
+
+                     0.20
+                                                                                                                                                                                                                Page
+
+
+
+
+                     0.00
+                                                                                                                                                                                                                Report
+
+
+
+
+                            0   0.1   0.2   0.3   0.4    0.5   0.6   0.7   0.8    0.9        1       1.1        1.2          1.3   1.4       1.5        1.6   1.7   1.8
+                                                                                  J [-]
+                                                                                                                                                                                                                  3.4
+                                                                                                                                                                                                                3752
+
+
+
+
+                                                                                                                            DIAGRAMS/DRAWINGS
+                         Report   3752
+                         Page       4.1
+
+
+Model propeller VP1304
+
+
+
+
+                                          PHOTOGRAPHS
+                          Report   3752
+                          Page       4.2
+
+
+Dummy hub configuration
+
+
+
+
+   VP1304 with caps
+
+
+
+
+                                           PHOTOGRAPHS
+                              Report   3752
+                              Page       4.3
+
+
+Dynamometer H39 with VP1304
+
+
+
+
+                                               PHOTOGRAPHS
+                                                                                       Report          3752
+                                                                                       Page            A1.1
+
+
+                                             Symbols
+
+symbol   name                                   definition or explanation                   SI - unit
+
+AE       Expanded blade area                    Expanded blade area of a screw                  m2
+                                                propeller outside the boss or hub
+A0       Propeller disc area                    πD2/4                                           m2
+AP       Projected blade area                   Projected blade area of a screw                 m2
+                                                propeller outside the boss or hub
+CTh      Thrust loading coefficient             T / (AP qA) = (TP / AP) / qA                     1
+D        Rotor diameter                                                                          m
+c        Chord length                                                                            m
+dh       Boss or hub diameter                                                                    m
+F        Force                                                                                   N
+g        Acceleration of gravity                Weight force / mass, strength of the            m/s2
+                                                earth gravity field
+n        Frequency or rate of revolution        Alias RPS (RPM in some propulsor                Hz
+                                                applications)
+h0       Immersion                              The depth of submergence of the                  m
+                                                propeller measured vertically from
+                                                the propeller centre to the free surface
+
+
+
+
+                                                                                                              ANNEX
+J        Propeller advance ratio                VA / (D n)                                       1
+KQ       Torque coefficient                     Q / (ρ n2 D5)                                    1
+KT       Thrust coefficient                     T / ((ρ n2 D4)                                   1
+P        Power                                                                                  W
+Ρ        Pitch in general                                                                        m
+pa       Atmospheric pressure                                                                   Pa
+PD, PP   Delivered power, rotor power           Qω                                              W
+PT       Thrust power                           T VA                                            W
+P/D      Pitch ratio                                                                             1
+Q        Torque                                 PD / ω                                          Nm
+qA       Dynamic pressure based on advance      ρ VA2 / 2                                       Pa
+         speed
+
+R        Resistance (force)                     Force opposing translatory velocity              N
+R        Radius                                                                                  m
+                                                ( c0.7  VA  ( 0.7  n  D ) ) / v
+                                                            2                  2
+Re       Reynolds number                                                                         1
+r        Radius                                                                                  m
+                                                                                        Report           3752
+                                                                                        Page             A1.2
+
+
+                                                  Symbols
+
+symbol     name                                      definition or explanation               SI - unit
+
+T          Thrust                                                                                 N
+t          Time                                      - ... +                                     s
+tW         Temperature of water                                                                   °C
+t          Blade section thickness                                                                m
+V          Velocity of a body, speed in general                                                   m/s
+           of the model or the ship
+VA         Advance speed                             Equivalent propeller open water              m/s
+                                                     speed based on thrust or torque
+                                                     identity
+Z, z       Number of blades                                                                       1
+          Angle of rake                                                                          deg
+θ          Angle of blade position                                                                deg
+λ          Scale ratio, linear scale of model        Propeller (index S) dimension divided        1
+                                                     by corresponding model (index M)
+                                                     dimension λ = DS / DM
+μ          Viscosity                                                                             kg/ms
+v          Kinematic viscosity                       μ/ρ                                         m2/s
+
+
+
+
+                                                                                                                ANNEX
+π          Circular constant                         3.1415926535                                 1
+ρ          Mass density of fluid                     dm / dV                                     kg/m3
+ω          Propellerr rotational velocity            2πn                                          s-1
+
+                                                  Indices
+
+index    name                                        definition or explanation
+A        Air
+c        Construction, design
+M        Model
+S        Ship
+W        Water
+max      Maximum
+min      Minimum
+0.7      According radius r/R = 0.7
+                                                                                   Report        3752
+                                                                                   Page          A2.1
+
+
+                                     Methods and procedures
+
+Open water test
+
+The dynamometer H39 from Kempf & Remmers will be used for the open water tests (Figure
+A1). The configuration is with the shaft in upstream direction. The drag, the torque and the
+number of revolutions as well as the inflow speed will be measured during the tests.
+
+
+
+
+Figure A1: Test arrangement in the towing tank
+
+
+Measuring values
+
+
+
+
+                                                                                                        ANNEX
+Inflow velocity                      V      [m/s]
+Number of revolutions                n      [s-1]
+Thrust                               T      [N]
+Torque                               Q      [Nm]
+
+Before the open water tests the zero reference values of thrust and torque will be determined.
+
+The open water tests will be carried out in a range of J = 0 to KT < 0. Variation in J will be
+achieved by varying the inflow speed for a given rotational speed.
+
+During each run the measured values of drag, torque, rotational speed and inflow speed will be
+recorded, together with time series, maximum and minimum values and standard deviations of
+the signals.
+
+The measured drag will be corrected for the effect of the streamlined hub cap.
+
+The measured torque will be corrected for the effect frictional values of torque, taken with the
+shaft rotating at the same speed with an axis symmetric mass mounted at the position of the rotor.
+                                                                               Report   3752
+                                                                               Page     A2.2
+
+
+
+Open water characteristics
+
+Measuring values:      T, Q, n, V
+
+                                            V
+Advance coefficient                 J 
+                                           nD
+
+                                                   T
+Thrust coefficient                  KT 
+                                              n2  D4
+
+                                                    Q
+Torque coefficient                  KQ 
+                                              n 2  D5
+
+                                            J KT
+Propeller efficiency                O       
+                                           2 KQ
+
+
+                                                   V 2  0.7  D    n 
+                                           c0.7
+                                    Re 
+                                                                           2
+Reynolds number
+                                           
+
+                                             8 KT
+Thrust loading coefficient          CTh      
+                                              J2
+
+
+
+
+                                                                                               ANNEX
+                                                                   Report   3752
+                                                                   Page     A3.1
+
+
+                      Coordinate system
+
+                  Cartesian coordinate system
+
+
+
+
+Cylindrical propeller coordinate system looking on pressure side
+
+
+
+
+                                                                                   ANNEX
+

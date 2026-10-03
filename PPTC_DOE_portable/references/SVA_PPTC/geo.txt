@@ -1,0 +1,54 @@
+Case 2: Geometry PPTC
+Propeller
+The geometry is given in model scale.
+
+Propeller diameter              D                   [mm]                                      250.0000
+Pitch at r/R=0.7                P0.7                [mm]                                      408.7500
+Pitch at r/R=0.75               P0.75               [mm]                                      407.3804
+Mean pitch                      Pmean               [mm]                                      391.8812
+Chord length at r/R=0.70        C0.70               [mm]                                      104.1670
+Chord length at r/R=0.75        C0.75               [mm]                                      106.3476
+Thickness at r/R=0.75           t0.75               [mm]                                        3.7916
+Pitch ratio                     P0.7/D              [-]                                         1.6350
+Mean pitch ratio                Pmean/D             [-]                                         1.5675
+Area ratio                      AE/A0               [-]                                         0.7790
+Skew                            θeff                [°]                                        18.8000
+Hub diameter ratio              dh/D                [-]                                         0.1500
+Number of blades                z                   [-]                       5
+Direction of rotation                                                         right-handed (SCS)
+
+   −   The propeller is a controllable pitch propeller. This affects the propeller blade design near the
+       hub and results in a 0.3 mm gap between hub and propeller blade near the leading and trailing
+       edge of the propeller..
+   −   The trailing edge for the upper propeller radii is sharp.
+   −   The propeller was designed to generate a tip vortex.
+   −   Two coordinate systems are specified. The ship coordinate system (SCS) is used for the open
+       water tests and corresponds to the usual coordinate system. For the velocity measurements
+       (LDV) a second coordinates system was introduced, the propeller coordinate system (PCS). The
+       intention was to measure the axial velocities inline with the positive x-axis and thereby obtain
+       positive axial velocities. Which coordinate system is used will be specified.
+
+
+Hub cap
+Different hub cap geometries are provided. The hub caps differ whether they are employed in a pull or
+push arrangement. The hub cap geometry is provided with the propeller geometry for the specific test
+cases.
+Ship coordinate system (SCS)
+The ship coordinate system is an orthogonal right-handed system, with the x-axis pointing upstream
+and the z-axis upwards. The SCS is employed for the open water tests.
+
+
+
+
+Fig. 1: Ship coordinate system
+
+
+Propeller coordinate system (PCS)
+An orthogonal coordinate system is used for the propeller, with the x-axis pointing downstream and the
+z-axis upwards. Please note, that the direction of rotation is defined in the ship coordinate system.
+
+
+
+
+Fig. 2: Propeller coordinate system
+

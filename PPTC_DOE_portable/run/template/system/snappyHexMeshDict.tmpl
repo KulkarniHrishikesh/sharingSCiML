@@ -1,0 +1,40 @@
+FoamFile { version 2.0; format ascii; class dictionary; object snappyHexMeshDict; }
+castellatedMesh true; snap true; addLayers @ADDLAYERS@;
+geometry
+{
+    propeller.stl { type triSurfaceMesh; name propeller; }
+    rotorSweptDisk { type searchableCylinder; point1 (0.15 0 0); point2 (-0.15 0 0); radius 0.145; }
+    wake { type searchableCylinder; point1 (0 0 0); point2 (-0.45 0 0); radius 0.135; }
+}
+castellatedMeshControls
+{
+    maxLocalCells 6000000; maxGlobalCells 20000000; minRefinementCells 10; maxLoadUnbalance 0.10;
+    nCellsBetweenLevels 3;
+    features ( { file "propeller.eMesh"; level @FEAT@; } );
+    refinementSurfaces { propeller { level (@SMIN@ @SMAX@); patchInfo { type wall; } } }
+    resolveFeatureAngle 30;
+    refinementRegions
+    {
+        rotorSweptDisk { mode inside; levels ((1E15 @DISK@)); }
+        wake { mode inside; levels ((1E15 @WAKE@)); }
+    }
+    locationInMesh (0.8 0.3 0.3);
+    allowFreeStandingZoneFaces true;
+}
+snapControls { nSmoothPatch 3; tolerance 2.0; nSolveIter 50; nRelaxIter 5; nFeatureSnapIter 10; implicitFeatureSnap false; explicitFeatureSnap true; multiRegionFeatureSnap false; }
+addLayersControls
+{
+    relativeSizes true;
+    layers { propeller { nSurfaceLayers @NLAYERS@; } }
+    expansionRatio 1.2; finalLayerThickness 0.4; minThickness 0.1; nGrow 0;
+    featureAngle 120; slipFeatureAngle 30; nRelaxIter 3; nSmoothSurfaceNormals 1; nSmoothNormals 3; nSmoothThickness 10;
+    maxFaceThicknessRatio 0.5; maxThicknessToMedialRatio 0.3; minMedialAxisAngle 90; nBufferCellsNoExtrude 0; nLayerIter 50;
+}
+meshQualityControls
+{
+    maxNonOrtho 65; maxBoundarySkewness 4; maxInternalSkewness 4; maxConcave 80; minVol 1e-13; minTetQuality 1e-15;
+    minArea -1; minTwist 0.02; minDeterminant 0.001; minFaceWeight 0.05; minVolRatio 0.01; minTriangleTwist -1;
+    nSmoothScale 4; errorReduction 0.75;
+    relaxed { maxNonOrtho 75; }
+}
+mergeTolerance 1e-6;

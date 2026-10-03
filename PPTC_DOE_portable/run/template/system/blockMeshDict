@@ -1,0 +1,77 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+//
+// Background block for the PPTC (VP1304) open-water propeller.
+// D = 0.25 m (SVA report 3752 Table 1).
+//
+// Orientation verified directly against the downloaded CAD
+// (case2-1_PPTC_geo_no_gap.stp, scaled mm->m): the imported solid's own
+// bounding box puts the blade disk near x in [-0.12, 0.13] and the
+// shaft/dynamometer stub trailing out to x = -0.356. Report 3752 states
+// the SCS x-axis points upstream and the propeller shaft is downstream --
+// so inflow is at +x, outflow at -x, matching the shaft's own -x-ward
+// extent in the CAD exactly (NOT the inlet(-X)/outlet(+X) convention
+// drafted in the Phase-A version of this file -- corrected here after
+// actually importing and measuring the geometry).
+//
+// Domain: x in [-2.0, 1.0] (~4D upstream of the disk, ~8D downstream past
+// the shaft end), y,z in [-0.75, 0.75] (3D radius) -- ITTC-guideline
+// starting point, not yet blockage/farfield-sensitivity-checked.
+// Base cell ~0.075 m; snappyHexMesh refines near the propeller surface
+// and the swept-disk MRF region.
+
+convertToMeters 1;
+
+vertices
+(
+    (-2.0 -0.75 -0.75)
+    ( 1.0 -0.75 -0.75)
+    ( 1.0  0.75 -0.75)
+    (-2.0  0.75 -0.75)
+    (-2.0 -0.75  0.75)
+    ( 1.0 -0.75  0.75)
+    ( 1.0  0.75  0.75)
+    (-2.0  0.75  0.75)
+);
+
+blocks
+(
+    hex (0 1 2 3 4 5 6 7) (40 20 20) simpleGrading (1 1 1)
+);
+
+edges ();
+
+boundary
+(
+    inlet
+    {
+        type patch;
+        faces ((1 2 6 5));
+    }
+    outlet
+    {
+        type patch;
+        faces ((0 4 7 3));
+    }
+    farfield
+    {
+        type slip;
+        faces
+        (
+            (0 1 5 4)
+            (3 7 6 2)
+            (0 3 2 1)
+            (4 5 6 7)
+        );
+    }
+);
+
+mergePatchPairs ();
+
+// ************************************************************************* //

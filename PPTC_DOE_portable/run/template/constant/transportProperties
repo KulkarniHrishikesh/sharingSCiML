@@ -1,0 +1,22 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Phase 1: single-phase, non-cavitating open-water validation run.
+// Water properties are the exact measured values from SVA report 3752
+// ("Open water test, n = 10 s-1"), tW = 15.6 degC:
+//   nu = mu/rho = 1.124e-6 m^2/s, rho = 998.99 kg/m^3.
+// (The two-phase Schnerr-Sauer cavitation setup for the later Phase E run
+// is kept in transportProperties.cavitation, using the different n=25 s^-1
+// cavitation-tunnel water properties from report 3753 -- do not conflate
+// the two operating conditions.)
+
+transportModel  Newtonian;
+
+nu              [0 2 -1 0 0 0 0] 1.124e-06;
+

@@ -1,0 +1,9 @@
+PPTC DOE: 128 runs = 15 existing + 113 new (seed 20261003, 400 candidate LHS designs)
+Factor ranges: J 0.35-1.25, pitch -5 to +5 deg, n 10-15 1/s
+Stratification of new points (one per 1/113 stratum, every factor): OK
+Min distance among all 128 points (normalised): 0.0889
+Min distance new-to-existing (normalised): 0.0907
+Centred L2 discrepancy of new points: 0.00017 (lower is more uniform)
+Test split: 13 new runs flagged 'test' (held out from surrogate training)
+Unique pitch values (each needs its own geometry and mesh): 113 new + 3 existing
+Reynolds-number note: n 10->15 1/s changes Re(0.7R) by 1.5x at fixed J
