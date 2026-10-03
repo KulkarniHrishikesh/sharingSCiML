@@ -24,6 +24,7 @@ T0=$(date +%s); status=ok
 rm -rf $CASE; mkdir -p $CASE $OUT && cd $CASE || exit 1
 cp -r $ROOT/template/system $ROOT/template/constant $ROOT/template/0.orig .
 cp $ROOT/doe/sampleCloud system/
+mkdir -p constant/triSurface   # empty dir is not kept by git
 # geometry for this pitch (generated on the fly from the design-pitch surface)
 if python3 -c "import sys; sys.exit(0 if abs($PITCH) < 1e-9 else 1)"; then
     cp $ROOT/stl/prop_pitch0.stl constant/triSurface/propeller.stl

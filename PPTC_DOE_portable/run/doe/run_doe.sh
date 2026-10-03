@@ -8,9 +8,10 @@ ROOT=${PPTC_ROOT:-$(cd "$(dirname "$0")/.." && pwd)}; export PPTC_ROOT=$ROOT
 TPC=$(lscpu 2>/dev/null | awk -F: '/Thread\(s\) per core/{print $2+0}' | head -1); TPC=${TPC:-1}
 NCPU=$(nproc 2>/dev/null || getconf _NPROCESSORS_ONLN); JOBS=${JOBS:-1}; NP=${NP:-$(( NCPU / TPC ))}
 cd $ROOT; mkdir -p results/runs
+Q=results/queue.$(hostname).$$.txt   # per-process: several queues may share results/ (multi-node)
 DESIGN=$ROOT/doe/design_128.csv
 echo "doe start $(date '+%F %T') JOBS=$JOBS NP=$NP" >> results/progress.log
-python3 - "$DESIGN" "${ONLY:-}" "$ROOT" <<'E' > results/queue.txt
+python3 - "$DESIGN" "${ONLY:-}" "$ROOT" <<'E' > $Q
 import csv, sys, os
 only = set(filter(None, sys.argv[2].split(',')))
 rows = sorted(csv.DictReader(open(sys.argv[1])), key=lambda r: int(r.get('priority') or 999))
@@ -21,10 +22,11 @@ for r in rows:
     if os.path.exists(d + "/DONE") or os.path.exists(d + "/FAILED"): continue
     print(r['run_id'], r['J'], r['pitch_deg'], r['n_rps'])
 E
-echo "queued $(wc -l < results/queue.txt) runs" | tee -a results/progress.log
+echo "queued $(wc -l < $Q) runs" | tee -a results/progress.log
 if [ -n "${DRY:-}" ]; then
-    awk -v np=$NP '{print "bash doe/run_doe_case.sh", $1, $2, $3, $4, np}' results/queue.txt; exit 0
+    awk -v np=$NP '{print "bash doe/run_doe_case.sh", $1, $2, $3, $4, np}' $Q; rm -f $Q; exit 0
 fi
 # job pool: each line -> one run_doe_case.sh invocation
-xargs -P $JOBS -L 1 bash -c 'bash '"$ROOT"'/doe/run_doe_case.sh "$0" "$1" "$2" "$3" '"$NP"' >> '"$ROOT"'/results/progress.log 2>&1' < results/queue.txt
+xargs -r -P $JOBS -L 1 bash -c 'bash '"$ROOT"'/doe/run_doe_case.sh "$0" "$1" "$2" "$3" '"$NP"' >> '"$ROOT"'/results/progress.log 2>&1' < $Q
+rm -f $Q
 echo "sweep end $(date '+%F %T')" >> results/progress.log
