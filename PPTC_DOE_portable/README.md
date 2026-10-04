@@ -39,6 +39,7 @@ and use the prompts in `PROMPTS_FOR_CLAUDE.md`.
 | `tools/` | DOE generation, pitch measurement, merging, listing, analysis scripts | optional |
 | `references/` | SVA reports 3752–3754, PPTC CAD (STEP, PFF), LDV data, original case notes | optional |
 | `previous_cases/` | 17-run sweep + 4 reruns: results, logs, fields (3.2 GB), plots | optional |
+| `data_manifest.csv`, `fetch_data.sh` | list (size, SHA-256) and downloader for the large archives on Cloudflare R2 | optional |
 | `sample_run/R005/` | example of one run's output folder (real files + an emulated point-cloud sample), for writing converters | optional |
 
 ## 3. Requirements on the run machine
@@ -151,3 +152,25 @@ plotting tools need `matplotlib` and `scipy`.
 - `references/cad/PPTC_geo_no_gap.stp`: source of `run/stl/prop_pitch0.stl` (gmsh surface, 0.9 mm on
   blades, `tools/stlgen.py`).
 - `references/original_PPTC_case_notes.md`: original case set-up notes (solver research, conditions).
+
+## 9. Large data on Cloudflare R2
+
+Files over GitHub's 100 MB limit (the previous-case field archives, and in future the DOE run outputs)
+are kept in the private R2 bucket `sharingsciml-data`. `data_manifest.csv` lists each file's path,
+size and SHA-256; `fetch_data.sh` downloads and verifies them.
+
+1. Get an R2 API token with *Object Read* (or *Read & Write*) on the bucket from the bucket owner
+   (Cloudflare dashboard → R2 → Manage API tokens). You need the Access Key ID, the Secret Access Key
+   and the endpoint `https://<ACCOUNT_ID>.r2.cloudflarestorage.com`.
+2. Configure rclone **in a terminal** (keep keys out of chats, scripts and this repository):
+   ```bash
+   rclone config create r2 s3 provider=Cloudflare access_key_id=<KEY_ID> \
+     secret_access_key=<SECRET> endpoint=https://<ACCOUNT_ID>.r2.cloudflarestorage.com \
+     acl=private no_check_bucket=true
+   chmod 600 ~/.config/rclone/rclone.conf
+   rclone ls r2:sharingsciml-data/pptc      # bucket-scoped tokens cannot list all buckets; this works
+   ```
+3. Download: `bash fetch_data.sh` (all) or `bash fetch_data.sh fields3` (a subset); `LIST=1` previews.
+4. Uploading new large outputs (e.g. finished DOE runs):
+   `rclone copy run/results r2:sharingsciml-data/pptc/doe_results --progress`, then add the files to
+   `data_manifest.csv` (`shasum -a 256 <file>` or `sha256sum <file>`).

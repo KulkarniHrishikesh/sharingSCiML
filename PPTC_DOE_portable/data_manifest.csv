@@ -1,0 +1,4 @@
+local_path,r2_key,size_bytes,sha256,description
+previous_cases/sweep_17runs/fields.tgz,pptc/previous_cases/sweep_17runs/fields.tgz,2621884683,abdf5a40def9ecf5d9458bebd94006519fe6bcf2a4b5b769ae70f8c59b7398e0,final-time fields + meshes of the 17-run sweep (mesh study + 14 parametric runs)
+previous_cases/sweep_17runs/light.tgz,pptc/previous_cases/sweep_17runs/light.tgz,227290784,baece142d3d46226ba23842297d002a7876c10f9654c1a3c999d490d5b079b91,force/moment histories; residuals; propeller-surface VTK and logs of the 17 runs
+previous_cases/rerun_4cases/fields3.tgz,pptc/previous_cases/rerun_4cases/fields3.tgz,522541994,915e7cad24fb517de82be71cbe0d6aa9ab4bee66162ea2778342ebc3ed3ea7fb,final-time fields + meshes of the 4 force-converged reruns
