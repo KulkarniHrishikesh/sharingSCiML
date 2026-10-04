@@ -38,7 +38,7 @@ and use the prompts in `PROMPTS_FOR_CLAUDE.md`.
 | `design/` | copy of the design, design plot, summary, sampling-cloud coordinates | no (reference) |
 | `tools/` | DOE generation, pitch measurement, merging, listing, analysis scripts | optional |
 | `references/` | SVA reports 3752–3754, PPTC CAD (STEP, PFF), LDV data, original case notes | optional |
-| `previous_cases/` | 17-run sweep + 4 reruns: results, logs, fields (3.2 GB), plots | optional |
+| `previous_cases/` | pointer to the private field archives of the earlier runs (R2) | optional |
 | `data_manifest.csv`, `fetch_data.sh` | list (size, SHA-256) and downloader for the large archives on Cloudflare R2 | optional |
 
 ## 3. Requirements on the run machine
@@ -55,7 +55,7 @@ and use the prompts in `PROMPTS_FOR_CLAUDE.md`.
 ### Step 0: copy the folder
 ```bash
 rsync -a --progress PPTC_DOE_portable/ user@machine:~/PPTC_DOE_portable/
-# minimum: only the run/ folder is required (76 MB); previous_cases/ is 3.2 GB
+# minimum: only the run/ folder is required (76 MB)
 ```
 
 ### Step 1: install (skip if OpenFOAM v2412 is already installed)
@@ -127,21 +127,17 @@ plotting tools need `matplotlib` and `scipy`.
   not been executed yet. KT/KQ do not depend on it, but the field surrogate does: confirm the smoke test
   writes it (and check the file names and header) before
   queuing the other 112 runs.
-- **Accuracy:** at design pitch, thrust is 3–9 % below SVA and torque within 3 % (J 0.4–1.0).
-  M2→M3 changes KT by about 2 %, so results are not fully mesh-independent.
+- **Accuracy:** check the M3 results against SVA report 3752 at design pitch (n = 10 and 15 1/s) before
+  relying on them; results are not fully mesh-independent.
 - Pitch changes and n between 10 and 15 1/s have no experimental data; the n = 15 1/s design-pitch
   corner can be checked against SVA report 3752.
 - `run_doe_case.sh` adds `--allow-run-as-root` to `mpirun` only when running as root.
 
-## 7. Previous results (`previous_cases/`)
+## 7. Previous results
 
-| Item | Summary |
-|---|---|
-| Mesh study (design pitch, J = 0.8021) | M1 147k: KT −4.2 %, 10KQ −2.7 %; M2 589k: −2.0 %, +4.5 %; M3 1.16M: −3.4 %, +2.3 % vs SVA |
-| Sweep (M3, pitch −4/0/+4 × J 0.4–1.2, n = 10) | `sweep_17runs/results.csv`, plot `analysis/pptc_sweep_curves.png` |
-| Convergence check | all 17 runs converged within 0.25 % (one oscillating case averaged); `analysis/convergence.csv` |
-| Reruns with force-based stopping | `rerun_4cases/`: identical to the original within 0.01 % |
-| Archives | `light*.tgz`: force histories, surface VTK, logs; `fields*.tgz`: final fields and meshes |
+The results of the earlier runs (mesh study, 15-run sweep, convergence checks, reruns) are kept
+private and are not part of this repository. The large field archives are in the private R2 bucket
+(`previous_cases/LARGE_FILES_NOT_IN_GIT.md`, section 9).
 
 ## 8. References (`references/`)
 

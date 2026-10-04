@@ -19,6 +19,5 @@ change, shaft speed). 15 runs done, 113 to run. Full procedure: `README.md`. Pro
 ## Key facts
 - Validation data: SVA report 3752 (`references/SVA_PPTC/report3752.txt`), KT/10KQ vs J at
   n = 10 and 15 1/s, design pitch only.
-- At design pitch the M3 setup gives thrust 3–9 % below SVA and torque within 3 % (J 0.4–1.0).
 - Geometry per run: `run/doe/pitch_np.py` rotates each blade about its spindle axis (smoothstep
   ramp above the root fillets); the measured pitch change is about 0.944 × nominal.

@@ -65,6 +65,6 @@ exercises the new meshing setting, the checkMesh gate, point-cloud sampling and 
   in priority order (space-filling at any stopping point).
 
 ## 6. Known limits
-- Thrust 3–9 % below SVA at design pitch (torque within 3 % for J 0.4–1.0); M2→M3 changes KT by about 2 %.
+- Accuracy against SVA (design pitch) and mesh sensitivity are documented in the private results, not here.
 - No experimental data for pitch changes or for n between 10 and 15 1/s (SVA: design pitch, n = 10 and 15 1/s).
 - The 15 done runs used meshes that are not qualified under the new gate (1–3 faces skewness > 4).
