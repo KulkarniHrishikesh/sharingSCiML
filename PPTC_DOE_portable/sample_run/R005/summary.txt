@@ -1,1 +1,0 @@
-R005 J=0.6 pitch=0 n=10 status=ok (from RunPod sweep case C_p0_J0.6)

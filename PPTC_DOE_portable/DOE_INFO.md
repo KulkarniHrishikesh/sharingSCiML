@@ -11,7 +11,6 @@ Status as of 3 Oct 2026: **15 of 128 runs done, 113 to run. None of the 113 has 
 - Outputs per run: KT, 10KQ, η0 (mean of last 100 iterations), thrust/torque history, propeller-surface
   fields (p, wall shear stress, y+), U, p, k, ω, νt on a fixed 16,360-point cloud (CSV; about 1,510–1,550
   points inside the body are skipped, so rows must be joined to `design/cloud_points.csv` on x,y,z).
-- Example output folder: `sample_run/R005/` (real files plus an emulated point-cloud CSV).
 
 ## 2. Design (`design/design_128.csv`)
 | Item | Value |

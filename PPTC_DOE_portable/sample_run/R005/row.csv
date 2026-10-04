@@ -1,2 +1,0 @@
-case,mesh,pitch_deg,J,n_rps,status,cells,iters,converged,T_N,Q_Nm,KT,KQ10,eta0,KT_drift_pct,t_mesh_s,t_solve_s,np,yplus_mean,yplus_max
-R005,M3,0,0.6,10.0,ok,1161568,356,yes,233.791,14.1897,0.59911,1.45449,0.39334,1.155,0,77,16,21.589392,162.15168

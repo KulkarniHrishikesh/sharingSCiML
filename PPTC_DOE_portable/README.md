@@ -40,7 +40,6 @@ and use the prompts in `PROMPTS_FOR_CLAUDE.md`.
 | `references/` | SVA reports 3752–3754, PPTC CAD (STEP, PFF), LDV data, original case notes | optional |
 | `previous_cases/` | 17-run sweep + 4 reruns: results, logs, fields (3.2 GB), plots | optional |
 | `data_manifest.csv`, `fetch_data.sh` | list (size, SHA-256) and downloader for the large archives on Cloudflare R2 | optional |
-| `sample_run/R005/` | example of one run's output folder (real files + an emulated point-cloud sample), for writing converters | optional |
 
 ## 3. Requirements on the run machine
 
@@ -75,7 +74,7 @@ ONLY=R127 bash doe/run_doe.sh
 cat results/runs/R127/summary.txt            # status=ok expected
 cat results/runs/R127/mesh_quality.txt       # must contain "Mesh OK"
 tail -3 results/runs/R127/log.forceWatch     # "CONVERGED at it ..."
-ls results/runs/R127/postProcessing/sampleCloud/*/  # point-cloud CSV: confirm file names and header (see sample_run/)
+ls results/runs/R127/postProcessing/sampleCloud/*/  # point-cloud CSV: confirm file names and header
 cat results/results_doe.csv
 ```
 
@@ -126,7 +125,7 @@ plotting tools need `matplotlib` and `scipy`.
   `maxNonOrtho` in `run/template/system/snappyHexMeshDict.tmpl`.
 - **Point-cloud sampling** (`run/doe/sampleCloud`: OpenFOAM `sets`/`cloud`, CSV, fields U p k omega nut) has
   not been executed yet. KT/KQ do not depend on it, but the field surrogate does: confirm the smoke test
-  writes it (and check the file names and header against `sample_run/README_SAMPLE.md`) before
+  writes it (and check the file names and header) before
   queuing the other 112 runs.
 - **Accuracy:** at design pitch, thrust is 3–9 % below SVA and torque within 3 % (J 0.4–1.0).
   M2→M3 changes KT by about 2 %, so results are not fully mesh-independent.
